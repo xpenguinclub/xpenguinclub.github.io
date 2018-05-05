@@ -1,0 +1,20 @@
+<div id="pag">
+{% assign didathing = false %}
+{% if paginator.previous_page %}
+{% if paginator.page == 2 %}
+{% capture link %}{{ site.baseurl }}/{% endcapture %}
+{% else %}
+{% assign link = paginator.previous_page_path %}
+{% endif %}
+{% assign didathing = true %}
+<a id="later" href="{{ link }}">&#x276C; newer posts</a>
+{% endif %}
+{% if paginator.next_page %}
+<a id="earlier" href="{{ paginator.next_page_path }}">older posts &#x276D;</a>
+{% assign didathing = true %}
+{% endif %}
+</div>
+{% if didathing %}
+<div class="cf"></div>
+<hr id="pag" />
+{% endif %}

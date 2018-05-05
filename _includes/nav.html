@@ -1,0 +1,9 @@
+<nav>
+	<ul>
+		{% for link in site.links %}
+			<li>
+				<a href="{{ link[1].url }}"><img src="{{ site.baseurl }}{{ site.imagedir }}{{ link[1].image }}" title="{{ link[0] }}" /></a>
+			</li>
+		{% endfor %}
+	</ul>
+</nav>

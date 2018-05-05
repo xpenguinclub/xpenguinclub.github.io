@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>OpenVPN for Gaming</title>
+		<link rel="alternate" type="application/atom+xml" title="Ludic Linux Atom Feed" href="/atom.xml">
+		<meta name="keywords" content="linux, gaming, linux gaming, games, reviews, critique, thoughts, opinion, steamos" />
+		<meta name="twitter:card" content="summary_large_image" />
+		<meta name="twitter:site" content="@LudicLinux">
+		<meta name="twitter:title" content="OpenVPN for Gaming" />
+		<meta name="twitter:description" content="How I got it set up" />
+		<meta name="description" content="How I got it set up" />
+		<meta name="twitter:image" content="http://localhost:4000/images/openvpn_featured.jpg" />
+		<meta property="og:site_name" content="Xpenguin" />
+		<meta property="og:title" content="OpenVPN for Gaming" />
+
+		<meta property="og:type" content="article" />
+
+		<meta property="og:url" content="http://localhost:4000/OpenVPN/" />
+		<meta property="og:image" content="http://localhost:4000/images/openvpn_featured.jpg" />
+		<meta property="og:description" content="How I got it set up" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="/css/main.css" >
+		<link rel="shortcut icon" href="/images/favicon.png">
+	</head>
+	<body>
+
+
+<header>
+	<nav>
+	<ul>
+		
+			<li>
+				<a href="https://twitter.com/LudicLinux"><img src="/images/twitter_icon.png" title="Twitter" /></a>
+			</li>
+		
+			<li>
+				<a href="/atom.xml"><img src="/images/atom_icon.png" title="Atom Feed" /></a>
+			</li>
+		
+			<li>
+				<a href="https://www.youtube.com/channel/UCRE3NFNtdjR96-H4QG4U1Fg"><img src="/images/youtube_icon.png" title="Youtube" /></a>
+			</li>
+		
+	</ul>
+</nav>
+
+	<a href="/"><div id="padder"></div></a>
+</header>
+	<div id="postcontainer">
+
+<section id="topicpost">
+	<article id="post">
+		
+<a class="noline" href="/OpenVPN/">
+	<h3 class="textshadow">OpenVPN for Gaming</h3>
+</a>
+
+		
+<div class="byline">by <a href="/">uoou</a> on January 19, 2016</div>
+
+		<div id="postcontent"><p>I’m no expert, certainly not in networking, so this isn’t so much a <strong>HowTo</strong> as a <strong>HowIDid</strong>. I’ll show you how I set up OpenVPN to allow my friends and I to play old ass games that only work on LAN (in our case, <a href="http://store.steampowered.com/app/4540/">Titan Quest</a> and a spot of <a href="http://store.steampowered.com/app/2990/">FlatOut 2</a>, both via Wine in my case, of course). This solution works for games which rely on UDP broadcast (i.e. games where you can’t just enter a direct IP, you have to look for games on the local network).</p>
+
+<!--more-->
+
+<h2 id="preamble">Preamble</h2>
+
+<p>Bear in mind that this approach will expose your entire local network to any clients you invite. They will be able to see any shared resources on your local network — essentialy it’ll be as if they are connected directly to your LAN. This is only for use with friends whom you trust.</p>
+
+<p>You can use any security measures you like, you don’t have to use keys. I’ll be using keys though.</p>
+
+<p>I’ll be using the same keys for all clients. This isn’t generally advised since if one of them leaks their key then, in order to remain secure, you’ll need to revoke and replace the key for everyone. In a big organisation this would be a terrible idea but for a handful of friends I think it’s easier to just have one key for all of them. Which approach you take is up to you.</p>
+
+<p>I used netctl to make the bridge since it seemed simplest. You can use any method you like but I’ll only be covering netctl.</p>
+
+<p>I’m using Arch so examples will be Arch-centric and I’ll be using Systemd to manage services, adjust to taste.</p>
+
+<p>Stuff you’ll need:</p>
+
+<ul>
+  <li>OpenVPN installed, obviously. It’ll be in your repos.</li>
+  <li>rsa-tools to generate the keys. Again, check your repos.</li>
+  <li>A wired internet connection on the server machine (I believe it’s possible to bridge a wifi connection but it’s more complicated so you’re on your own with that).</li>
+  <li>If the machine you’re going to use as the server has a dynamic external IP then use a <a href="https://duckduckgo.com/?q=free%20dynamic%20dns">dynamic DNS service</a> to get yourself a hostname that people can connect on, otherwise you’re going to have to give your clients new configs every time your IP changes. If you have a static IP then you can just use that if you like.</li>
+  <li>Some friends to test it’s working.</li>
+  <li><a href="http://www.hedgewars.org/download.html">Hedgewars</a> — handy for testing. Throw up a LAN game and see if others can see it.</li>
+</ul>
+
+<h2 id="i-am-the-keymaster">I am the keymaster</h2>
+
+<p>We need to make an assload of keys.</p>
+
+<p>I followed <a href="https://wiki.archlinux.org/index.php/Create_a_Public_Key_Infrastructure_Using_the_easy-rsa_Scripts">these instructions</a> exactly so there’s no point repeating them here, they’re excellent instructions.</p>
+
+<p>The only changes I made were to use <code class="highlighter-rouge">server</code> where the example uses <code class="highlighter-rouge">elmer</code> and to use <code class="highlighter-rouge">client</code> where the example uses <code class="highlighter-rouge">bugs</code>. So when generating keys for my server, in the common name field, I used <code class="highlighter-rouge">server</code> and when generating the client keys I used <code class="highlighter-rouge">client</code> for the common name. If you want to stay matched up with me then do the same.</p>
+
+<p>When you fill in the defaults in the <code class="highlighter-rouge">.vars</code> file, just put sensible things in each of the following fields: <code class="highlighter-rouge">KEY_COUNTRY</code>, <code class="highlighter-rouge">KEY_PROVINCE</code>, <code class="highlighter-rouge">KEY_CITY</code>, <code class="highlighter-rouge">KEY_ORG</code>, and <code class="highlighter-rouge">KEY_EMAIL</code>.</p>
+
+<p>Follow the instructions using the default values for all fields <em>except</em> when it asks you for common name where you should use <code class="highlighter-rouge">server</code> or <code class="highlighter-rouge">client</code> as appropriate.</p>
+
+<p>When you’re done, inside the <code class="highlighter-rouge">/root/easy-rsa/keys/</code> directory, you should have (amongst others) the following files:</p>
+
+<ul>
+  <li>ca.crt</li>
+  <li>client.crt</li>
+  <li>client.key</li>
+  <li>dh2048.pem</li>
+  <li>server.crt</li>
+  <li>server.key</li>
+  <li>ta.key</li>
+</ul>
+
+<p>As root, copy these files to <code class="highlighter-rouge">/etc/openvpn/</code>. Copying the client files as well as the server files will allow us to run a client locally to make sure we’ve not done anything catastrophically wrong.</p>
+
+<p>If you mess up the key making process at any point, just run <code class="highlighter-rouge">./clean-all</code> and start again.</p>
+
+<h2 id="openvpn-server-configuration">OpenVPN server configuration</h2>
+
+<p>Before we go any further you should forward <strong>UDP port 1194</strong> to the machine you’re going to run the server on. This will vary depending on your router and/or software firewall, I’m sure you know how to forward ports: do that!</p>
+
+<p>We’re going to base our OpenVPN configuration on one of the examples because that sounds like a sensible thing to do. The location of the examples will vary per distro but you want to copy the example called <code class="highlighter-rouge">server.conf</code> to <code class="highlighter-rouge">/etc/openvnc/</code>. So on Arch that’s:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ sudo cp /usr/share/openvpn/examples/server.conf /etc/openvpn/server.conf
+</code></pre></div></div>
+
+<p>Now open <code class="highlighter-rouge">/etc/openvpn/server.conf</code> (as root) in your favourite text editor. And edit the settings as follows. I’m only going to include the lines I changed; anything not listed here should stay as default.</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>dev tap0
+
+ca /etc/openvpn/ca.crt
+cert /etc/openvpn/server.crt
+key /etc/openvpn/server.key
+
+dh /etc/openvpn/dh2048.pem
+
+;server 10.8.0.0 255.255.255.0 # i.e. we comment this line out
+
+server-bridge 192.168.1.254 255.255.255.0 192.168.1.100 192.168.1.200
+
+client-to-client
+
+duplicate-cn
+
+tls-auth /etc/openvpn/ta.key 0
+
+user nobody
+group nobody
+</code></pre></div></div>
+
+<p>We put the full paths in for the key files to allow for flexibility when testing.</p>
+
+<p>Some of those lines need comments and caveats.</p>
+
+<p>This line…</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>server-bridge 192.168.1.254 255.255.255.0 192.168.1.100 192.168.1.200
+</code></pre></div></div>
+
+<p>… will vary depending on your network. My router assigns IPs in the <code class="highlighter-rouge">192.168.1.x</code> range. If yours assigns them in the <code class="highlighter-rouge">192.168.0.x</code> range then you’ll want to change that first value to <code class="highlighter-rouge">192.168.0.254</code>. The second value is the netmask which should usually be right as it is and you’ll probably know if it’s not.</p>
+
+<p>The last two numbers are the range of IPs OpenVNC will assign to clients. Adjust these as appropriate. So if your router assigns IPs in <code class="highlighter-rouge">192.168.0.x</code> then you’ll want this line to be:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>server-bridge 192.168.0.254 255.255.255.0 192.168.0.100 192.168.0.200
+</code></pre></div></div>
+
+<p>This line…</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>client-to-client
+</code></pre></div></div>
+
+<p>… allows clients to ‘see’ each other on the network. For gaming you will most likely want this.</p>
+
+<p>This line…</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>duplicate-cn
+</code></pre></div></div>
+
+<p>… allows multiple clients to connect with the same keys. If you’re going to give each of your clients different keys then you can leave that commented out.</p>
+
+<p>And that’s it. The server configuration is done.</p>
+
+<h2 id="bridging">Bridging</h2>
+
+<p>We need to create two network devices. The first is the tap0 device that OpenVPN will use and the second is a bridge to connect that tap0 device with our ethernet connection.</p>
+
+<p>There are many ways to do this, I’m using netctl since it seemed simplest. So, as root, create the file <code class="highlighter-rouge">/etc/netctl/tuntap</code> and put the following in it:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Description='tuntap connection'
+Interface=tap0
+Connection=tuntap
+Mode='tap'
+User='nobody'
+Group='nobody'
+</code></pre></div></div>
+
+<p>That one’s straightforward. Now let’s make the bridge device.</p>
+
+<p>Create a file, again as root, at <code class="highlighter-rouge">/etc/netctl/bridge</code> and put the following in it:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Description="bridge connection"
+Interface=br0
+Connection=bridge
+BindsToInterfaces=(eth0 tap0)
+IP=no
+ExecUpPost="ip link set dev br0 address $(cat /sys/class/net/eth0/address); IP=dhcp; ip_set"
+ExecDownPre="IP=dhcp"
+
+# # Ignore (R)STP and immediately activate the bridge
+SkipForwardingDelay=yes
+</code></pre></div></div>
+
+<p>There are two instances of <code class="highlighter-rouge">eth0</code> there, replace these with the name of your ethernet device which you can find by executing <code class="highlighter-rouge">ip link show</code> in a terminal (it will likely be the one that starts with ‘eth’ or ‘en’).</p>
+
+<p>This file could be simpler, what this line…</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>ExecUpPost="ip link set dev br0 address $(cat /sys/class/net/eth0/address); IP=dhcp; ip_set"
+</code></pre></div></div>
+
+<p>… does is ensures that the bridge has the same MAC address as my ethernet interface which was necessary for port forwarding on my router. If this is not necessary for you then there are simpler examples <a href="https://wiki.archlinux.org/index.php/Bridge_with_netctl">here</a>.</p>
+
+<p>And that’s the bridge done and ready to go. Just the clients left.</p>
+
+<h2 id="client-config">Client config</h2>
+
+<p>This is very similar to the server configuration. First copy the example file to <code class="highlighter-rouge">/etc/openvpn/</code> as root like so:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ sudo cp /usr/share/openvpn/examples/client.conf /etc/openvpn/client.conf
+</code></pre></div></div>
+
+<p>(Again, paths may vary on other distros)</p>
+
+<p>Now edit <code class="highlighter-rouge">/etc/openvpn/client.conf</code> as root in your text editor. As before I’ll only include the lines you should change, everything else should remain the same.</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>dev tap0
+
+remote YOUR_HOSTNAME_OR_IP 1194
+
+user nobody
+group nobody
+
+tls-auth ta.key 1
+</code></pre></div></div>
+
+<p>Only one line to adjust here:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>remote YOUR_HOSTNAME_OR_IP 1194
+</code></pre></div></div>
+
+<p>Just replace ‘YOUR_HOSTNAME_OR_IP’ with… yeah, your hostname or IP. The one you want your friends to connect to over the internet. So if you’re using dynamic dns and the hostname is hello.noip.com then this line would be:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>remote hello.noip.com 1194
+</code></pre></div></div>
+
+<p>If you’re using your IP instead which is 1.2.3.4 then the line would be:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>remote 1.2.3.4 1194
+</code></pre></div></div>
+
+<p>Ok, that’s the client config file done.</p>
+
+<p>On Windows, the <code class="highlighter-rouge">client.conf</code> file will need to be renamed to <code class="highlighter-rouge">client.ovpn</code> so you may as well make a copy now:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ sudo cp /etc/openvpn/client.conf /etc/openvpn/client.ovpn
+</code></pre></div></div>
+
+<p>You need to send your client files to your clients, how you do this is up to you, I made a zip file which I sent to each of them. The files they need are:</p>
+
+<ul>
+  <li>ca.crt</li>
+  <li>client.crt</li>
+  <li>client.key</li>
+  <li>client.ovpn on Windows <strong>OR</strong> client.conf on Linux</li>
+  <li>ta.key</li>
+</ul>
+
+<p>So bundle those files up into a zip file or whatever you like, we’ll come back to what clients should do with them shortly.</p>
+
+<h2 id="lets-start-the-server">Let’s start the server</h2>
+
+<p>First we need to bring up the network interfaces that OpenVPN will use, so in a terminal we do:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ sudo netctl start tuntap
+$ sudo netctl start bridge
+</code></pre></div></div>
+
+<p>And then we start OpenVPN itself:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ sudo systemctl start openvpn@server
+</code></pre></div></div>
+
+<p>(This assumes you called your server configuration file <code class="highlighter-rouge">server.conf</code> like I did. If you called it <code class="highlighter-rouge">myserver.conf</code> instead then this command would be <code class="highlighter-rouge">sudo systemctl start openvpn@myserver</code>)</p>
+
+<p>To stop these services just issue the same commands with <code class="highlighter-rouge">stop</code> instead of <code class="highlighter-rouge">start</code>. If you want it so that it all happens automatically at boot then issue the same commands with <code class="highlighter-rouge">enable</code> instead of <code class="highlighter-rouge">start</code>.</p>
+
+<p>And that’s it, the server should be running. You can use <code class="highlighter-rouge">ip link show</code> to check those interfaces are there if you like.</p>
+
+<p><a href="https://github.com/uoou/OpenVPN_configs">Here’s a link to my configs</a> in case they might be helpful.</p>
+
+<h2 id="connecting-clients">Connecting clients</h2>
+
+<p>You’ve distributed those client files to your clients as described above and they’re ready to go. Here’s what they do.</p>
+
+<h4 id="on-linux">On Linux</h4>
+
+<p>They just need install OpenVPN  from their repos and put all the files you gave them in <code class="highlighter-rouge">/etc/openvpn/</code>. Then they can do:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ sudo systemctl start openvpn@client
+</code></pre></div></div>
+
+<p>And they should be connected. Since you already have those files in place you can issue that command to see if it works. It won’t be very meaningful since you’ll just be connecting to a LAN you’re already on. If you want to see whether you’re successfully connected, do:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ sudo cat /etc/openvpn/openvpn-status.log
+</code></pre></div></div>
+
+<p>That’ll show any connected clients.</p>
+
+<h4 id="on-windows">On Windows</h4>
+
+<p>Windows users need to install the <a href="https://openvpn.net/index.php/open-source/downloads.html">OpenVPN client</a>. Once that’s done, they need to navigate to the program’s install directory and then put the files you gave them inside the <code class="highlighter-rouge">config</code> folder. So their config folder, when things are set up correctly, should contain the following:</p>
+
+<ul>
+  <li>ca.crt</li>
+  <li>client.crt</li>
+  <li>client.key</li>
+  <li>client.ovpn</li>
+  <li>ta.key</li>
+</ul>
+
+<p>They then need to run the OpenVPN client which will put an icon in their system tray. Then, if things are set up correctly, if they right click on the system tray icon, they should have the option to <code class="highlighter-rouge">connect</code>, which they should click.</p>
+
+<p>They should then connect.</p>
+
+<p>You can test for a successful connection by getting them to ping an IP on your internal network, such as your own machine, and you can try pinging the IP that OpenVPN assigned to them.</p>
+
+<p>If that works then throw up a LAN game of Hedgewars and see if they can see it.</p>
+
+<h2 id="further-stuff">Further stuff</h2>
+
+<h4 id="metrics-on-windows">Metrics on Windows</h4>
+
+<p>Windows clients may need to mess around with metrics in order to see games. I’m not sure this is necessary; I got my friends to do this before I hit on the working solution. So here it is just in case.</p>
+
+<p>In Windows 7 (should be very similar on other Windowses) open the start menu and enter:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>ncpa.cpl
+</code></pre></div></div>
+
+<p>In the search box. Press enter.</p>
+
+<p>Click on <code class="highlighter-rouge">Change adapter settings</code> on the left, this should bring up a list of network interfaces. Choose the OpenVPN one, right click it and select <code class="highlighter-rouge">Properties</code>.</p>
+
+<p>On the properties window, in the box in the middle, first of all deselect/disable <code class="highlighter-rouge">Internet Protocol Version 6</code> since this is useless to us for gaming.</p>
+
+<p>Now highlight the <code class="highlighter-rouge">Internet Protocol Version 4</code> entry and click on the <code class="highlighter-rouge">Properties</code> button lower down.</p>
+
+<p>On the next Window, click on the <code class="highlighter-rouge">Advanced</code> button near the bottom.</p>
+
+<p>Finally we’re there. Windows instructions are absurd.</p>
+
+<p>Ok, so on this window, near the bottom, untick <code class="highlighter-rouge">Automatic metric</code> if it’s ticked and then enter <code class="highlighter-rouge">5</code> in the <code class="highlighter-rouge">Interface metric</code> field.</p>
+
+<p>Now OK your way back out of everything. This may need a reboot to take effect, who knows; it’s Windows.</p>
+
+<h4 id="mtu-stuff">MTU Stuff</h4>
+
+<p>You may want to mess around with the MTU size which may or may not improve performance in certain situations. I did it and noticed a minor reduction in pings. I did exactly what <a href="https://wiki.archlinux.org/index.php/OpenVPN# Configure_the_MTU_with_Fragment_and_MSSu">this section of the wiki</a> told me to so there’s no point repeating the instructions.</p>
+
+<h2 id="cesi-nest-pas-une-lan">Cesi n’est pas une LAN</h2>
+
+<p>I have no idea whether LAN is masculine or feminine.</p>
+
+<p>As I said up top, I am not an expert as I hope was evident in my writing. I just stumbled, after a lot of fumbling around, on something that works. If you have any technical questions, <strong><em>please</em></strong> don’t ask me; I won’t know the answers. Ask some people who might know instead.</p>
+
+<p>If you have any corrections or improvements to my instructions then please do tell me. Either email me via the link up top or do a pull request on the repo (also up top), whichever you prefer.</p>
+
+<p>Once I’d got my config up and running I decided to copy it over to my Raspberry Pi rather than use my desktop PC. That way it’s always available, whether my PC’s on or not. The RPi handles it fine alongside its day-to-day task of being a little media server. It’s a pretty cool thing to do with a Pi you have lying around.</p>
+
+<p>Again, <a href="https://github.com/uoou/OpenVPN_configs">here’s a link to my configs</a> in case they might be helpful.</p>
+
+<p>And lastly, here we are, me and my friends playing Titan Quest by harnessing the vast power of Linux, OpenVPN, the <a href="https://wiki.archlinux.org/">Arch Wiki</a> and (in my case) Wine.</p>
+
+<div class="screenshot">
+<a href="/images/openvpn_playing.jpg"><img src="/images/openvpn_playing.jpg" /></a>
+
+<div class="caption">Yeah, we all chose the same gender and tunic colour. How embarassing.</div>
+
+</div>
+
+</div>
+		<hr />
+	</article>
+	<section id="sharelinks">
+	<h2>Share</h2>
+	<ul id="share">
+		<li><a class="social" id="tw" href="https://twitter.com/intent/tweet?text=OpenVPN for Gaming: How I got it set up&url=http://localhost:4000/OpenVPN/&via=LudicLinux&related=LudicLinux" rel="nofollow" target="_blank" title="Share on Twitter" /></a></li>
+		<li><a class="social" id="fb" href="https://facebook.com/sharer.php?u=http://localhost:4000/OpenVPN/" rel="nofollow" target="_blank" title="Share on Facebook" /></a></li>
+		<li><a class="social" id="go" href="https://plus.google.com/share?url=http://localhost:4000/OpenVPN/" rel="nofollow" target="_blank" title="Share on Google+" /></a></li>
+	</ul>
+	<div id="comments">Want to discuss this game or Linux gaming in general? <a href="https://www.reddit.com/r/linux_gaming/">/r/linux_gaming/</a> is a great place for that.</div>
+	<hr></hr>
+</section>
+
+</section>
+						<section id="smallprint">
+					Articles are copyright of their respective authors and are licensed under a <a href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.
+				</section>
+				<!--end maincontainer-->
+			</div>
+			<!--end postcontainer-->
+		</div>
+
+	</body>
+</html>
+

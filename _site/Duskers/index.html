@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Duskers</title>
+		<link rel="alternate" type="application/atom+xml" title="Ludic Linux Atom Feed" href="/atom.xml">
+		<meta name="keywords" content="linux, gaming, linux gaming, games, reviews, critique, thoughts, opinion, steamos" />
+		<meta name="twitter:card" content="summary_large_image" />
+		<meta name="twitter:site" content="@LudicLinux">
+		<meta name="twitter:title" content="Duskers" />
+		<meta name="twitter:description" content="My metal children" />
+		<meta name="description" content="My metal children" />
+		<meta name="twitter:image" content="http://localhost:4000/images/duskers_featured.jpg" />
+		<meta property="og:site_name" content="Xpenguin" />
+		<meta property="og:title" content="Duskers" />
+
+		<meta property="og:type" content="article" />
+
+		<meta property="og:url" content="http://localhost:4000/Duskers/" />
+		<meta property="og:image" content="http://localhost:4000/images/duskers_featured.jpg" />
+		<meta property="og:description" content="My metal children" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="/css/main.css" >
+		<link rel="shortcut icon" href="/images/favicon.png">
+	</head>
+	<body>
+
+
+<header>
+	<nav>
+	<ul>
+		
+			<li>
+				<a href="https://twitter.com/LudicLinux"><img src="/images/twitter_icon.png" title="Twitter" /></a>
+			</li>
+		
+			<li>
+				<a href="/atom.xml"><img src="/images/atom_icon.png" title="Atom Feed" /></a>
+			</li>
+		
+			<li>
+				<a href="https://www.youtube.com/channel/UCRE3NFNtdjR96-H4QG4U1Fg"><img src="/images/youtube_icon.png" title="Youtube" /></a>
+			</li>
+		
+	</ul>
+</nav>
+
+	<a href="/"><div id="padder"></div></a>
+</header>
+	<div id="postcontainer">
+
+<section id="topicpost">
+	<article id="post">
+		
+<a class="noline" href="/Duskers/">
+	<h3 class="textshadow">Duskers</h3>
+</a>
+
+		
+<div class="byline">by <a href="/">uoou</a> on June 28, 2016</div>
+
+		<div id="postcontent"><p>Imagine someone took <a href="https://en.wikipedia.org/wiki/NetHack">Nethack</a>, <a href="http://store.steampowered.com/app/268500/">XCOM</a>, <a href="http://store.steampowered.com/app/212680/">FTL</a> and <a href="https://en.wikipedia.org/wiki/Bash_(Unix_shell)">Bash</a> and mixed them all together somehow in a way that made sense.</p>
+
+<p>Sounds good? Well, that’s Duskers.</p>
+
+<p><strong>## END TRANSMISSION ##</strong></p>
+
+<!--more-->
+
+<p>Since “end transmission” doesn’t seem to do anything in HTML, I’ll continue.</p>
+
+<p>Duskers has you as the pilot of a spaceship in a universe where <em>something’s gone badly wrong</em>. As a lonely survivor of whatever-it-is-that-happened, your task is to survive. And, if you manage that, to find out what happened to everyone else.</p>
+
+<p>You move your ship through a graveyard of derelict space craft, docking with those you like the look of in search of fuel, scrap, technology and clues, in the occasional (beautifully written) un-corrupted log, as to what’s going on. You do not explore these ships directly but through the sensors of a team of up to four drones that you control via a command-line interface.</p>
+
+<p>Drones —  each of which gets, by default, a human name to make <em>absolutely sure</em> you grow attached to them — each have up to four modules which are, essentially, skills they can use during excursions. Modules are salvaged from destroyed drones you find while exploring ships and can be swapped between drones and upgraded, with scrap, to be more powerful or useful. Modules allow drones to do a variety of things like defend themselves, interface with ship systems, detect and avoid enemies and move salvage around.</p>
+
+<p>The command-line interface — which is lovely and Unixy, great for Linux users (you can even create aliases) — requires you to control the bots through typed commands. You can, while boarded with another ship, switch between two views — a tactical overview which represents the ship as a series of rooms, doors and systems and a drone view which, from a top-down, third-person perspective shows you what the selected drone can see and allows you to move it around with the cursor keys.</p>
+
+<div class="screenshot">
+<a href="/images/duskers_hal.jpg"><img src="/images/duskers_hal.jpg" /></a>
+
+</div>
+
+<p>You’ll spend most of your time in the overview giving your bots commands, which take the form of actions combined with objects, and can be strung together with semicolons. So, for example, say I wanted drone 1 and 3 to move into room 2, drone 3 to use its generator to power the ship’s systems and drone 1 to interface with the terminal in that room (their respective modules allow them to do these things), then I wanted to open door 2, which would now be powered, and move drone 3 into room 3 and to collect anything it finds there. I could enter:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&gt; navigate 1 3 r2; generator; interface; d2; navigate 3 r3; gather all
+</code></pre></div></div>
+
+<p>Airlocks are <code class="highlighter-rouge">an</code> (where n is a number), doors are <code class="highlighter-rouge">dn</code>, rooms are <code class="highlighter-rouge">rn</code> and drones are just the numbers <code class="highlighter-rouge">1-4</code> (you can use their names if you prefer). To open doors (so long as they’re powered) you only have to type their name, which will toggle them (you can do <code class="highlighter-rouge">d2 open/close</code> if you prefer). Modules are activated by typing their names. If more than one drone has a particular module you’ll need to specify which drone to use with, for example, <code class="highlighter-rouge">generator 1</code>. All commands will tab-complete so executing orders is more about thinking and planning than it is a typing test.</p>
+
+<div class="screenshot">
+<a href="/images/duskers_alias.jpg"><img src="/images/duskers_alias.jpg" /></a>
+
+</div>
+
+<p>And this is a game <em>all</em> about thinking and planning. The derelict ships you explore are home to a variety of hazards in the form of automated defenses and various aliens, all of which will quickly disable or destroy your drones given the chance. Fighting is not a viable strategy — even if you win (and in my experience you won’t) it will be too expensive — your objective is to conserve and gather resources, combat is wasteful. Instead you must outsmart your enemy — using modules to detect and watch them, making educated guesses as to their movements and behaviours and either luring them where you want them while you explore other rooms or sneaking past them.</p>
+
+<p>There’ll be long pauses while you consider your next move (it’s not turn-based but it has that feel). I’ll sometimes walk away from my PC to have a think about the current situation — it’s one of those games. This need for consideration extends to drone’s loadouts — do you want the drone with stealth to also have the motion sensor? Or the lure? Should the interface drone be the one to do gathering and towing? There are decisions to make all the time and they will all play slightly differently, affecting the options you have during excursions.</p>
+
+<div class="screenshot">
+<a href="/images/duskers_tactical.jpg"><img src="/images/duskers_tactical.jpg" /></a>
+
+</div>
+
+<p>The universe is a lonely place, what with everyone else being dead. The utilitarian aesthetics of the interface design when controlling the ship between salvage missions suggests mundanity; this isn’t the exciting space of Star Wars or even Star Trek, it was, until whatever happened happened, our normal, everyday world where we did our job.</p>
+
+<p>During boardings it feels different. The mundanity remains — these are lived in spaces where people got on with their lives — but deserted they’re eerie, foreboding and claustrophobic. And <em>dangerous</em> — the enemies in this game do not fuck around and, at least early on, if you’re spotted, that’s it, you may as well start over. You’ll know the enemies are there from the start but you don’t know <em>where</em>. It’s a tense game of distraction, deduction and sneaking where one wrong move is enough to end your run. This is the space of Alien or 2001. You hear the weird creaks and groans of decaying structures through your drone’s sensors and share their restricted, imperfect view of what’s around them. On the tactical view you see the red lines that tell you there’s something bad <em>somewhere</em> in that next room and you notice the air vent in the current room. Do you come up with a plan for pressing on or do you call it quits and get out with what you have?</p>
+
+<p>Duskers is in a fundamental way free from abstraction. By which I mean, like other games which simulate interacting with a computer interface, if you were doing the thing the game depicts rather than playing the game, there would be no difference. Your screen would look the same and you’d be doing the same stuff; peering at your screen and typing things in. Rather than being slightly removed from the game’s narrative you’re <em>right</em> in it and, instead, slightly removed from your drones. And you <em>depend</em> on your drones, you literally need them to survive. They are your companions and partners and the closest thing to anything with a personality (projected as it may be) in your universe. You <em>care</em> about them. That combination of caring, distance and imperfect control is what makes Duskers so utterly tense, so devastating when things go wrong and rewarding when you get it right. There’s very little RNG here, beyond the procedurally generated environments; if you fail it was your fault.</p>
+
+<p>When you fail so hard that you may as well restart you can “reset”, which starts you off again from the beginning. If you don’t like how a particular excursion went you can quit out of it and you will be reverted to the state you were in before you boarded, but you will not be able to re-board that particular ship. I like this, it’s a smart compromise — permadeath can be overly punishing sometimes, especially in a game which relies so heavily on learning from mistakes.</p>
+
+<div class="screenshot">
+<a href="/images/duskers_navigate.jpg"><img src="/images/duskers_navigate.jpg" /></a>
+
+</div>
+
+<p>I thought I was sick of roguelikes but Duskers has disabused me of that, I think I was just sick of mediocre ones. Duskers is a clever, beautiful, <em>surprising</em> game in a crowded, tired genre (if a genre it is). It’s one of those games where you’ll know whether you’d like it just from the description, if it’s as good as it sounds. <em>It is</em>. I recommend it as firmly as I recommend getting your drones the fuck out of rooms with air-vents.</p>
+
+<p>Duskers is available on <a href="http://store.steampowered.com/app/254320/">Steam</a>, where it’s currently on sale, <a href="http://duskers.misfits-attic.com/">the developers’ website</a>, <a href="https://www.humblebundle.com/store/duskers">Humble</a> and <a href="https://www.gog.com/game/duskers">GOG</a>.</p>
+
+<p><strong>## SIGNAL LOST ##</strong></p>
+
+<p>I’m still here? Ok, fine, here’s a video of my pal Hex playing some Duskers on Linux:</p>
+
+<div class="ytvid">
+<iframe class="video" src="https://www.youtube.com/embed/87yoYkO_CQs" frameborder="0" allowfullscreen=""></iframe>
+</div>
+
+</div>
+		<hr />
+	</article>
+	<section id="sharelinks">
+	<h2>Share</h2>
+	<ul id="share">
+		<li><a class="social" id="tw" href="https://twitter.com/intent/tweet?text=Duskers: My metal children&url=http://localhost:4000/Duskers/&via=LudicLinux&related=LudicLinux" rel="nofollow" target="_blank" title="Share on Twitter" /></a></li>
+		<li><a class="social" id="fb" href="https://facebook.com/sharer.php?u=http://localhost:4000/Duskers/" rel="nofollow" target="_blank" title="Share on Facebook" /></a></li>
+		<li><a class="social" id="go" href="https://plus.google.com/share?url=http://localhost:4000/Duskers/" rel="nofollow" target="_blank" title="Share on Google+" /></a></li>
+	</ul>
+	<div id="comments">Want to discuss this game or Linux gaming in general? <a href="https://www.reddit.com/r/linux_gaming/">/r/linux_gaming/</a> is a great place for that.</div>
+	<hr></hr>
+</section>
+
+</section>
+						<section id="smallprint">
+					Articles are copyright of their respective authors and are licensed under a <a href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.
+				</section>
+				<!--end maincontainer-->
+			</div>
+			<!--end postcontainer-->
+		</div>
+
+	</body>
+</html>
+

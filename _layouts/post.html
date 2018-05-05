@@ -1,0 +1,12 @@
+{% include head.html %}
+{% include site_header.html %}
+<section id="topicpost">
+	<article id="post">
+		{% include post_heading.html %}
+		{% include byline.html %}
+		<div id="postcontent">{{ content }}</div>
+		<hr />
+	</article>
+	{% include share.html %}
+</section>
+{% include foot.html %}

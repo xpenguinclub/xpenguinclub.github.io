@@ -1,0 +1,30 @@
+---
+layout: default
+index: true
+title: Xpenguin
+subtitle: "A podcast about ting"
+image: "emblem.jpg"
+---
+{% include site_header.html %}
+<section id="pagelist">
+	<ul id="pages">
+		{% for page in paginator.posts %}
+			<li>
+				<article>
+					{% include post_heading.html %}
+					{% include byline.html %}
+					<div class="excerpt">
+						{% if page.content contains '<!--more-->' %}
+    							{{ page.content | split:'<!--more-->' | first }}
+						{% else %}
+							{{ page.excerpt }}
+						{% endif %}
+					</div>
+				</article>
+				<hr />
+			</li>
+		{% endfor %}
+	</ul>
+</section>
+{% include pagination.html %}
+		

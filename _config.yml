@@ -1,0 +1,50 @@
+name: Xpenguin
+description: Xpenguin
+url: http://www.xpenguin.club/
+baseurl: ""
+imagedir: "/images/"
+twitter_username: LudicLinux
+collections:
+    galleries:
+        output: true
+defaults:
+    -   
+        scope:
+            path: ""
+            type: "posts"
+        values:
+            comments: false
+            layout: post
+            author: hex
+    -   
+        scope:
+            path: ""
+            type: "drafts"
+        values:
+            comments: false
+            layout: post
+            author: hex
+plugins: [jekyll-paginate]
+paginate: 10 
+paginate_path: "/:num"
+links:
+    Twitter:
+        url: https://twitter.com/LudicLinux 
+        image: twitter_icon.png
+    Atom Feed:
+        url: /atom.xml 
+        image: atom_icon.png
+    Youtube:
+        url: https://www.youtube.com/channel/UCRE3NFNtdjR96-H4QG4U1Fg
+        image: youtube_icon.png
+authors:
+    hex:
+        name: HexDSL
+        link: https://www.youtube.com/channel/UCRE3NFNtdjR96-H4QG4U1Fg
+        email: hexdsl@protonmail.com
+# !! You don't need to change any of the configuration flags below !!
+#
+
+#markdown: redcarpet
+#highlighter: pygments
+permalink: /:title/
