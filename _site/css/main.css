@@ -82,7 +82,7 @@ header {
     transform: scale(1.1); }
   header #logo {
     display: block;
-    width: 40%;
+    width: 50%;
     margin: 250px auto 0 auto; }
     header #logo img {
       max-width: 100%;
