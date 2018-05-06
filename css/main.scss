@@ -32,9 +32,7 @@ $rightwidth-small:	10%;
 .textshadow {
 	text-shadow: 0 0 10px #ff00cc, 0 0 15px #ff00cc, 0 0 20px #ff00cc, 0 0 25px #ff00cc, 0 0 35px #ff00cc;
 	text-decoration: none;
-	-webkit-transition: all 0.5s;
-	-moz-transition: all 0.5s;
-	transition: all 0.5s;
+	transition: text-shadow 0.5s, color 0.5s;
 }
 .textshadow:hover {
 	color: #ff00cc;
@@ -118,21 +116,25 @@ h3 {
 	}
 }
 header {
-	margin: 0px 0px 0px 0px;
 	width: 100%;
 	height: 1000px;
-	background-image: url("{{ site.baseurl }}/images/vwave_header.jpg");
-	background-repeat: no-repeat;
-	background-size: cover;
-	background-position: center;
-	#padder {
-		width: 100%;
-		height: 50%;
+	overflow: hidden;
+	&:hover > div#scalecontainer {
+		transform: scale(1.1);
+	}
+	#logo {
+		display: block;
+		width: 40%;
+		margin: 250px auto 0 auto;
+		img {
+			max-width: 100%;
+			max-height: 100%;
+		}
 	}
 	nav {
 		text-align: right;
 		ul {
-			margin: -1em 0 2em 0;
+			margin: 0 0 2em 0;
 			padding: 0;
 			li {
 				display: inline;
@@ -150,6 +152,17 @@ header {
 			}
 		}
 	}
+}
+#scalecontainer {
+	position: absolute;
+	width: 100%;
+	height: 1000px;
+	z-index: -1;
+	background-image: url("{{ site.baseurl }}/images/vwave_header.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	transition: transform 5s ease-in-out;
 }
 section#pagelist {
 	ul#pages {
@@ -227,7 +240,7 @@ div#comments {
 }
 #postcontainer {
 	width: 80%;
-	margin: -300px auto 5em auto;
+	margin: -350px auto 5em auto;
 	max-width: 1200px;
 }
 #backandforth {
