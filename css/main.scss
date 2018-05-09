@@ -125,7 +125,7 @@ header {
 	#logo {
 		display: block;
 		width: 60%;
-		max-width: 1200px;
+		max-width: 1500px;
 		margin: 270px auto 0 auto;
 		img {
 			max-width: 100%;
@@ -192,16 +192,15 @@ div.excerpt {
 }
 
 article {
-	padding-bottom: 3em;
-	div.featureimg {
-		position: absolute;
-		width: 100%;
-		height: 100%;
-		background-size: cover;
-		//background-position: center center;
-		transition: all .4s ease-in-out;
-		transform: scale(1,1);
-		z-index: -1;
+	#padding-bottom: 3em;
+	padding: 5em 10em;
+	margin-bottom: 10em;
+	box-shadow: 0 0 20px #00f0ff, 0 0 30px #00f0ff, 0 0 50px #00f0ff, 0 0 70px #00f0ff, 0 0 110px #00f0ff, 0 0 20px #00f0ff inset, 0 0 30px #00f0ff inset, 0 0 50px #00f0ff inset, 0 0 70px #00f0ff inset, 0 0 110px #00f0ff inset;
+	border: 5px solid white;
+	transition: box-shadow 0.5s, border-color 0.5s;
+	&:hover {
+		box-shadow: none;
+		border-color: #00f0ff;
 	}
 }
 div#postcontent {
@@ -241,8 +240,8 @@ div#comments {
 }
 #postcontainer {
 	width: 80%;
-	margin: -350px auto 5em auto;
-	max-width: 1200px;
+	margin: -300px auto 5em auto;
+	max-width: 1500px;
 }
 #backandforth {
 	position: fixed;
