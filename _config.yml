@@ -30,7 +30,7 @@ paginate: 10
 paginate_path: "/:num"
 links:
     Twitter:
-        url: https://twitter.com/LudicLinux 
+        url: https://twitter.com/HexDSL
         image: twitter_icon.png
     Atom Feed:
         url: /atom.xml 
