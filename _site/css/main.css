@@ -100,7 +100,8 @@ header {
     display: block;
     width: 60%;
     max-width: 1500px;
-    margin: 270px auto 0 auto; }
+    margin: 270px auto 0 auto;
+    text-align: center; }
     header #logo img {
       max-width: 100%;
       max-height: 100%; }
