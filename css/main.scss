@@ -116,7 +116,7 @@ h3 {
 	font-size: 0.9em;
 }
 .excerpt, #postcontent {
-	p, li {
+	p, ul {
 		font-size: 1.2em;
 		line-height: 1.7em;
 	}
@@ -127,7 +127,9 @@ h3 {
 		content: "▸ ";
 		color: $highlight-col;
 	}
-
+	ul ul {
+		font-size: 1em;
+	}
 }
 header {
 	width: 100%;

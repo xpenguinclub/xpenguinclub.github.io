@@ -79,7 +79,7 @@ h3 {
 #comments, .caption {
   font-size: 0.9em; }
 
-.excerpt p, .excerpt li, #postcontent p, #postcontent li {
+.excerpt p, .excerpt ul, #postcontent p, #postcontent ul {
   font-size: 1.2em;
   line-height: 1.7em; }
 .excerpt ul, #postcontent ul {
@@ -87,6 +87,8 @@ h3 {
 .excerpt li::before, #postcontent li::before {
   content: "▸ ";
   color: #00f0ff; }
+.excerpt ul ul, #postcontent ul ul {
+  font-size: 1em; }
 
 header {
   width: 100%;
