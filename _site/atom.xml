@@ -4,7 +4,7 @@
  <title>Xpenguin</title>
  <link href="http://localhost:4000/atom.xml" rel="self"/>
  <link href="http://localhost:4000/"/>
- <updated>2018-05-10T11:56:22+01:00</updated>
+ <updated>2018-05-10T12:04:30+01:00</updated>
  <id>http://localhost:4000</id>
  
  <author>
@@ -22,7 +22,15 @@
    <link href="http://localhost:4000/The-one-with-the-tinfoil-hat/"/>
    <updated>2018-05-05T00:00:00+01:00</updated>
    <id>http://localhost:4000/The-one-with-the-tinfoil-hat</id>
-   <content type="html">&lt;h2 id=&quot;hosts&quot;&gt;Hosts&lt;/h2&gt;
+   <content type="html">&lt;p&gt;Nam odio sapien, tincidunt ut ipsum sit amet, porta luctus odio. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.&lt;/p&gt;
+
+&lt;p&gt;Suspendisse potenti. Maecenas quis ornare nisi. Integer ut imperdiet enim. Vivamus malesuada quam vel neque iaculis elementum. Etiam feugiat semper nisl eget sollicitudin. In vestibulum consectetur lacus in pretium. Interdum et malesuada fames ac ante ipsum primis in faucibus.&lt;/p&gt;
+
+&lt;p&gt;(This is a test description, like)&lt;/p&gt;
+
+&lt;!--more--&gt;
+
+&lt;h2 id=&quot;hosts&quot;&gt;Hosts&lt;/h2&gt;
 
 &lt;h3 id=&quot;hamish-the-polar-bear&quot;&gt;Hamish The Polar Bear&lt;/h3&gt;
 

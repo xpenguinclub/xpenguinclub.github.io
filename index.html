@@ -2,8 +2,7 @@
 layout: default
 index: true
 title: Xpenguin
-subtitle: "A podcast about ting"
-image: "emblem.jpg"
+subtitle: "A weekly Linux gaming podcast"
 ---
 {% include site_header.html %}
 <section id="pagelist">
@@ -16,6 +15,9 @@ image: "emblem.jpg"
 					<div class="excerpt">
 					{% if page.podcast %}
 						{% include mp3_player.html %}
+						{% if page.content contains '<!--more-->' %}
+    							{{ page.content | split:'<!--more-->' | first }}
+						{% endif %}
 					{% else %}
 						{% if page.content contains '<!--more-->' %}
     							{{ page.content | split:'<!--more-->' | first }}
