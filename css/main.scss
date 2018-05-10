@@ -211,7 +211,7 @@ article {
 	#padding-bottom: 3em;
 	padding: 5em 10em;
 	margin-bottom: 10em;
-	box-shadow: 0 0 20px $highlight-col, 0 0 30px $highlight-col, 0 0 50px $highlight-col, 0 0 70px $highlight-col, 0 0 110px $highlight-col, 0 0 20px $highlight-col inset, 0 0 30px $highlight-col inset, 0 0 50px $highlight-col inset, 0 0 70px $highlight-col inset, 0 0 110px $highlight-col inset;
+	box-shadow: 0 0 10px $highlight-col, 0 0 15px $highlight-col, 0 0 25px $highlight-col, 0 0 35px $highlight-col, 0 0 55px $highlight-col, 0 0 10px $highlight-col inset, 0 0 15px $highlight-col inset, 0 0 25px $highlight-col inset, 0 0 35px $highlight-col inset, 0 0 55px $highlight-col inset;
 	border: 5px solid white;
 	transition: box-shadow 0.5s, border-color 0.5s;
 	&:hover {
