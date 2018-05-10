@@ -13,7 +13,17 @@ image: "emblem.jpg"
 				<article>
 					{% include post_heading.html %}
 					{% include byline.html %}
-					{% include mp3_player.html %}
+					<div class="excerpt">
+					{% if page.podcast %}
+						{% include mp3_player.html %}
+					{% else %}
+						{% if page.content contains '<!--more-->' %}
+    							{{ page.content | split:'<!--more-->' | first }}
+						{% else %}
+							{{ page.excerpt }}
+						{% endif %}
+					{% endif %}
+					</div>
 				</article>
 			</li>
 		{% endfor %}

@@ -246,7 +246,7 @@ hr {
   width: 100%;
   background-color: #fff;
   border-width: 0;
-  height: 3px;
+  height: 5px;
   box-shadow: 0 0 20px #00f0ff, 0 0 30px #00f0ff, 0 0 50px #00f0ff, 0 0 70px #00f0ff, 0 0 110px #00f0ff; }
   hr#pag {
     margin: 3em 0; }

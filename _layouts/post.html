@@ -4,7 +4,9 @@
 	<article id="post">
 		{% include post_heading.html %}
 		{% include byline.html %}
-		{% include mp3_player.html %}
+		{% if page.podcast %}
+			{% include mp3_player.html %}
+		{% endif %}
 		<div id="postcontent">{{ content }}</div>
 	</article>
 	{% include share.html %}

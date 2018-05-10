@@ -5,9 +5,6 @@ mp3url: http://xpenguin.pbmm.net/
 baseurl: ""
 imagedir: "/images/"
 twitter_username: LudicLinux
-collections:
-    galleries:
-        output: true
 defaults:
     -   
         scope:
@@ -15,6 +12,16 @@ defaults:
             type: "posts"
         values:
             comments: false
+            podcast: true
+            layout: post
+            author: hex
+    -   
+        scope:
+            path: ""
+            type: "blogs"
+        values:
+            comments: false
+            podcast: false
             layout: post
             author: hex
     -   
