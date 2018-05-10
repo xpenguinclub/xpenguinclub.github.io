@@ -4,7 +4,7 @@ url: http://xpenguin.club/
 mp3url: http://xpenguin.pbmm.net/
 baseurl: ""
 imagedir: "/images/"
-twitter_username: LudicLinux
+twitter_username: HexDSL
 defaults:
     -   
         scope:
@@ -13,15 +13,6 @@ defaults:
         values:
             comments: false
             podcast: true
-            layout: post
-            author: hex
-    -   
-        scope:
-            path: ""
-            type: "blogs"
-        values:
-            comments: false
-            podcast: false
             layout: post
             author: hex
     -   
