@@ -51,7 +51,7 @@ h1, h2 {
   text-align: left; }
 
 h1 {
-  font-size: 6em; }
+  font-size: 7em; }
 
 h2 {
   font-size: 4em;
@@ -311,18 +311,39 @@ ul#share {
       opacity: 1;
       border-radius: 50%; }
 
-@media screen and (max-width: 950px) {
+@media screen and (max-width: 1100px) {
   #postcontainer {
     width: 95%;
-    margin-bottom: 1em; }
+    margin-bottom: 1em;
+    margin: -150px auto 5em auto; }
 
-  header nav ul li img {
-    width: 50px;
-    height: 50px; }
+  h1 {
+    font-size: 3.5em; }
+
+  h2 {
+    font-size: 3em; }
+
+  h3 {
+    font-size: 2em; }
+
+  header {
+    height: 500px; }
+    header nav ul li img {
+      width: 50px;
+      height: 50px; }
+    header #logo {
+      width: 90%;
+      margin: 60px auto 0 auto; }
+
+  #scalecontainer {
+    height: 500px; }
 
   blockquote, code {
     margin-left: 0;
-    margin-right: 0; } }
+    margin-right: 0; }
+
+  article {
+    padding: 5em 3em; } }
 .jiggle {
   display: inline-block;
   font-weight: bold;
