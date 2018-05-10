@@ -14,12 +14,7 @@ $link-col:	#ff00cc;
 $comment-col:	#ececec;
 $code-col: #eee;
 $highlight-col:	#00f0ff;
-$leftwidth: 	70%;
-$rightwidth:	30%;
-$leftwidth-medium: 	80%;
-$rightwidth-medium:	20%;
-$leftwidth-small: 	90%;
-$rightwidth-small:	10%;
+
 @font-face {
     font-family: Streamster;
     src: url(/css/fonts/Streamster.ttf);
@@ -30,12 +25,12 @@ $rightwidth-small:	10%;
 	//background-color: rgba(38,0,17,0.15);
 }
 .textshadow {
-	text-shadow: 0 0 10px #ff00cc, 0 0 15px #ff00cc, 0 0 20px #ff00cc, 0 0 25px #ff00cc, 0 0 35px #ff00cc;
+	text-shadow: 0 0 10px $link-col, 0 0 15px $link-col, 0 0 20px $link-col, 0 0 25px $link-col, 0 0 35px $link-col;
 	text-decoration: none;
 	transition: text-shadow 0.5s, color 0.5s;
 }
 .textshadow:hover {
-	color: #ff00cc;
+	color: $link-col;
 	text-shadow: none;
 }
 
@@ -72,28 +67,36 @@ a {
 		text-decoration: none;
 	}
 }
+.mp3player {
+	audio: {
+		width: 100%;
+	}
+}
 .cf {
 	height: 0;
 	clear: both;
 }
-h1, h2, h3 {
+h1, h2 {
 	font-family: $header-font;
 	color: $heading-col;
 	margin: 0;
 	text-align: left;
 }
 h1 {
-	font-size: 3.5em;
+	font-size: 6em;
 }
 h2 {
-	font-size: 1.5em;
-	&#commentshead {
-		margin: 2em 0 1em 0;
-	}
+	font-size: 4em;
+	#text-shadow: 0 0 10px $highlight-col, 0 0 15px $highlight-col, 0 0 20px $highlight-col, 0 0 25px $highlight-col, 0 0 35px $highlight-col;
+	#transition: text-shadow 0.5s, color 0.5s;
+	text-decoration: none;
+	color: $highlight-col;
 }
 h3 {
-	font-size: 5em;
+	font-family: $font-stack;
+	font-size: 2.2em;
 }
+
 #bio, #sharelinks{
 	hr {
 		margin-top: 5em;
@@ -111,9 +114,17 @@ h3 {
 }
 .excerpt, #postcontent {
 	p, li {
-		font-size: 0.9em;
-		line-height: 1.4em;
+		font-size: 1.2em;
+		line-height: 1.7em;
 	}
+	ul {
+		list-style: none;
+	}
+	li::before {
+		content: "▸ ";
+		color: $highlight-col;
+	}
+
 }
 header {
 	width: 100%;
@@ -195,12 +206,12 @@ article {
 	#padding-bottom: 3em;
 	padding: 5em 10em;
 	margin-bottom: 10em;
-	box-shadow: 0 0 20px #00f0ff, 0 0 30px #00f0ff, 0 0 50px #00f0ff, 0 0 70px #00f0ff, 0 0 110px #00f0ff, 0 0 20px #00f0ff inset, 0 0 30px #00f0ff inset, 0 0 50px #00f0ff inset, 0 0 70px #00f0ff inset, 0 0 110px #00f0ff inset;
+	box-shadow: 0 0 20px $highlight-col, 0 0 30px $highlight-col, 0 0 50px $highlight-col, 0 0 70px $highlight-col, 0 0 110px $highlight-col, 0 0 20px $highlight-col inset, 0 0 30px $highlight-col inset, 0 0 50px $highlight-col inset, 0 0 70px $highlight-col inset, 0 0 110px $highlight-col inset;
 	border: 5px solid white;
 	transition: box-shadow 0.5s, border-color 0.5s;
 	&:hover {
 		box-shadow: none;
-		border-color: #00f0ff;
+		border-color: $highlight-col;
 	}
 }
 div#postcontent {
@@ -218,8 +229,8 @@ div#postcontent {
 			padding: 0.7em;
 		}
 	}
-	h2 {
-		margin-top: 3em;
+	h2, h3, h4 {
+		margin-top: 2em;
 	}
 	code {
 		margin: 0;
@@ -235,20 +246,10 @@ div#postcontent {
 div#comments {
 	margin-top: 2em;
 }
-#leftcontainer {
-	width: $leftwidth;
-}
 #postcontainer {
 	width: 80%;
 	margin: -300px auto 5em auto;
 	max-width: 1500px;
-}
-#backandforth {
-	position: fixed;
-	top: 0;
-	right: 0;
-	height: 100%;
-	width: $rightwidth;
 }
 #back, #forth {
 	position: relative;
@@ -304,7 +305,7 @@ div#comments {
 	text-shadow: 0 0 50px #333;
 }
 hr {
-	margin: 2em auto 10em auto;
+	margin: 2em auto;
 	width: 100%;
 	background-color: #fff;
 	border-width: 0;
@@ -312,7 +313,7 @@ hr {
 	&#pag {
 		margin: 3em 0;
 	}
-	box-shadow: 0 0 20px #00f0ff, 0 0 30px #00f0ff, 0 0 50px #00f0ff, 0 0 70px #00f0ff, 0 0 110px #00f0ff;
+	box-shadow: 0 0 20px $highlight-col, 0 0 30px $highlight-col, 0 0 50px $highlight-col, 0 0 70px $highlight-col, 0 0 110px $highlight-col;
 }
 blockquote {
 	border-left: 5px solid $highlight-col;
@@ -388,46 +389,12 @@ ul#share {
 }
 
 @media screen and (max-width: 1600px) {
-	#leftcontainer {
-		width: $leftwidth-medium;
-	}
-	#backandforth {
-		width: $rightwidth-medium;
-	}
-	#postcontainer {
-		width: 90%;
-	}
+
 }
 @media screen and (max-width: 1300px) {
-	#leftcontainer {
-		width: $leftwidth-small;
-	}
-	#backandforth {
-		width: $rightwidth-small;
-	}
-	.backforthtitle {
-		font-size: 0.07em;
-		max-width: 70%;
-	}
+
 }
 @media screen and (max-width: 950px) {
-	.backforthtitle {
-		font-size: 0.1em;
-		max-width: 80%;
-	}
-	#leftcontainer {
-		width: 100%;
-	}
-	#backandforth {
-		width: 100%;
-		height: 400px;
-		position: relative;
-		#back, #forth {
-			width: 50%;
-			height: 100%;
-			float: left;
-		}
-	}
 	#postcontainer {
 		width: 95%;
 		margin-bottom: 1em;
@@ -441,31 +408,6 @@ ul#share {
 						height: 50px;
 					}
 				}
-			}
-		}
-	}
-	article, article#post {
-		.headingcont {
-			div.titles {
-				margin: 8em 0 1em 0.5em;
-			}
-		}
-	}
-	article#post {
-		.headingcont {
-			div.titles {
-				margin-top: 15em;
-			}
-		}
-	}
-	article {
-		.headingcont {
-			h3 {
-				font-size: 2em;
-				line-height: 1em;
-			}
-			p {
-				font-size: 0.8em;
 			}
 		}
 	}
@@ -499,10 +441,4 @@ ul#share {
     transform: translate3d(1px, -1px, 0);
   }
 }
-.redact {
-	text-align: right;
-	text-decoration: line-through;
-}
-.redact:hover {
-	text-decoration: none;
-}
+

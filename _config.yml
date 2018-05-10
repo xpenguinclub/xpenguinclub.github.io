@@ -1,6 +1,7 @@
 name: Xpenguin
 description: Xpenguin
 url: http://www.xpenguin.club/
+mp3url: http://whatever.com/folder/
 baseurl: ""
 imagedir: "/images/"
 twitter_username: LudicLinux

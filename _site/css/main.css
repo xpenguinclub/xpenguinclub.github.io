@@ -37,26 +37,32 @@ a {
   a.noline:hover {
     text-decoration: none; }
 
+.mp3player {
+  audio-width: 100%; }
+
 .cf {
   height: 0;
   clear: both; }
 
-h1, h2, h3 {
+h1, h2 {
   font-family: Streamster;
   color: #fff;
   margin: 0;
   text-align: left; }
 
 h1 {
-  font-size: 3.5em; }
+  font-size: 6em; }
 
 h2 {
-  font-size: 1.5em; }
-  h2#commentshead {
-    margin: 2em 0 1em 0; }
+  font-size: 4em;
+  #text-shadow: 0 0 10px #00f0ff, 0 0 15px #00f0ff, 0 0 20px #00f0ff, 0 0 25px #00f0ff, 0 0 35px #00f0ff;
+  #transition: text-shadow 0.5s, color 0.5s;
+  text-decoration: none;
+  color: #00f0ff; }
 
 h3 {
-  font-size: 5em; }
+  font-family: Ubuntu, Calibri, sans-serif;
+  font-size: 2.2em; }
 
 #bio hr, #sharelinks hr {
   margin-top: 5em; }
@@ -71,8 +77,13 @@ h3 {
   font-size: 0.9em; }
 
 .excerpt p, .excerpt li, #postcontent p, #postcontent li {
-  font-size: 0.9em;
-  line-height: 1.4em; }
+  font-size: 1.2em;
+  line-height: 1.7em; }
+.excerpt ul, #postcontent ul {
+  list-style: none; }
+.excerpt li::before, #postcontent li::before {
+  content: "▸ ";
+  color: #00f0ff; }
 
 header {
   width: 100%;
@@ -160,8 +171,8 @@ div#postcontent {
       color: #bbb;
       font-size: 0.8em;
       padding: 0.7em; }
-  div#postcontent h2 {
-    margin-top: 3em; }
+  div#postcontent h2, div#postcontent h3, div#postcontent h4 {
+    margin-top: 2em; }
   div#postcontent code {
     margin: 0;
     padding: 0.1em; }
@@ -172,20 +183,10 @@ div#postcontent {
 div#comments {
   margin-top: 2em; }
 
-#leftcontainer {
-  width: 70%; }
-
 #postcontainer {
   width: 80%;
   margin: -300px auto 5em auto;
   max-width: 1500px; }
-
-#backandforth {
-  position: fixed;
-  top: 0;
-  right: 0;
-  height: 100%;
-  width: 30%; }
 
 #back, #forth {
   position: relative;
@@ -236,7 +237,7 @@ div#comments {
   text-shadow: 0 0 50px #333; }
 
 hr {
-  margin: 2em auto 10em auto;
+  margin: 2em auto;
   width: 100%;
   background-color: #fff;
   border-width: 0;
@@ -310,42 +311,7 @@ ul#share {
       opacity: 1;
       border-radius: 50%; }
 
-@media screen and (max-width: 1600px) {
-  #leftcontainer {
-    width: 80%; }
-
-  #backandforth {
-    width: 20%; }
-
-  #postcontainer {
-    width: 90%; } }
-@media screen and (max-width: 1300px) {
-  #leftcontainer {
-    width: 90%; }
-
-  #backandforth {
-    width: 10%; }
-
-  .backforthtitle {
-    font-size: 0.07em;
-    max-width: 70%; } }
 @media screen and (max-width: 950px) {
-  .backforthtitle {
-    font-size: 0.1em;
-    max-width: 80%; }
-
-  #leftcontainer {
-    width: 100%; }
-
-  #backandforth {
-    width: 100%;
-    height: 400px;
-    position: relative; }
-    #backandforth #back, #backandforth #forth {
-      width: 50%;
-      height: 100%;
-      float: left; }
-
   #postcontainer {
     width: 95%;
     margin-bottom: 1em; }
@@ -353,18 +319,6 @@ ul#share {
   header nav ul li img {
     width: 50px;
     height: 50px; }
-
-  article .headingcont div.titles, article#post .headingcont div.titles {
-    margin: 8em 0 1em 0.5em; }
-
-  article#post .headingcont div.titles {
-    margin-top: 15em; }
-
-  article .headingcont h3 {
-    font-size: 2em;
-    line-height: 1em; }
-  article .headingcont p {
-    font-size: 0.8em; }
 
   blockquote, code {
     margin-left: 0;
@@ -386,9 +340,3 @@ ul#share {
     transform: translate3d(-1px, 1px, 0); }
   40%, 60% {
     transform: translate3d(1px, -1px, 0); } }
-.redact {
-  text-align: right;
-  text-decoration: line-through; }
-
-.redact:hover {
-  text-decoration: none; }
