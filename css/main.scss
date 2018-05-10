@@ -39,11 +39,14 @@ body {
 	font-size: 1em;
 	color: $main-text-col;
 	background-color: $main-bg-col;
+	background-image: url("{{ site.baseurl }}/images/vwave_footer.jpg");
+	background-repeat: no-repeat;
+	background-position: bottom center;
+	background-size: 100%;
 }
 body, html {
 	margin: 0;
 	padding: 0;
-	height: 100%;
 }
 a {
 	text-decoration: none;

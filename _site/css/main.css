@@ -18,12 +18,15 @@ body {
   font-family: Ubuntu, Calibri, sans-serif;
   font-size: 1em;
   color: #fff;
-  background-color: #270032; }
+  background-color: #270032;
+  background-image: url("/images/vwave_footer.jpg");
+  background-repeat: no-repeat;
+  background-position: bottom center;
+  background-size: 100%; }
 
 body, html {
   margin: 0;
-  padding: 0;
-  height: 100%; }
+  padding: 0; }
 
 a {
   text-decoration: none;
