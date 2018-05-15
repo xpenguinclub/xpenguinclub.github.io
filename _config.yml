@@ -24,7 +24,7 @@ defaults:
             layout: post
             author: hex
 plugins: [jekyll-paginate]
-paginate: 10 
+paginate: 3
 paginate_path: "/:num"
 links:
     Atom Feed:
