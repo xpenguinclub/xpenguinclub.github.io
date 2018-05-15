@@ -39,6 +39,9 @@ links:
     Twitch:
         url: https://www.twitch.tv/hexdsl/
         image: twitch_icon.png
+    Discord:
+        url: https://discord.gg/usPdBTt
+        image: discord_icon.png
 authors:
     hex:
         name: HexDSL

@@ -2,6 +2,12 @@
 @font-face {
   font-family: Streamster;
   src: url(/css/fonts/Streamster.ttf); }
+@font-face {
+  font-family: Digi;
+  src: url(/css/fonts/DS-DIGI.TTF); }
+@font-face {
+  font-family: Digibold;
+  src: url(/css/fonts/DS-DIGIB.TTF); }
 .textbg {
   display: inline-block; }
 
@@ -29,12 +35,18 @@ body, html {
   padding: 0; }
 
 a {
+  transition: text-shadow 0.5s, color 0.5s;
   text-decoration: none;
   color: #ff00cc; }
   a:hover {
-    text-decoration: underline; }
+    color: #fff;
+    text-decoration: none;
+    text-shadow: 0 0 10px #ff00cc, 0 0 15px #ff00cc, 0 0 20px #ff00cc, 0 0 25px #ff00cc, 0 0 35px #ff00cc; }
   a.featureimg:hover {
     text-decoration: none; }
+  a#earlier, a#later {
+    font-family: Digi;
+    font-size: 2em; }
   a#earlier {
     float: right; }
   a.noline:hover {
@@ -64,8 +76,9 @@ h2 {
   color: #00f0ff; }
 
 h3 {
-  font-family: Ubuntu, Calibri, sans-serif;
-  font-size: 2.2em; }
+  font-family: Digibold;
+  font-size: 2.5em;
+  letter-spacing: 3px; }
 
 #bio hr, #sharelinks hr {
   margin-top: 5em; }
@@ -185,6 +198,10 @@ article {
   article:hover {
     box-shadow: none;
     border-color: #00f0ff; }
+  article .readmore {
+    font-family: Digi;
+    font-size: 1.5em;
+    text-align: right; }
 
 div#postcontent {
   margin: 2em 0 5em 0; }
@@ -336,7 +353,7 @@ ul#share {
 @media screen and (max-width: 1920px) {
   header #logo #logotext {
     font-size: 4em;
-    margin-top: -80px; } }
+    margin-top: -70px; } }
 @media screen and (max-width: 1550px) {
   header #logo #logotext {
     font-size: 3em;
@@ -377,7 +394,10 @@ ul#share {
     margin-right: 0; }
 
   article {
-    padding: 5em 3em; } }
+    padding: 5em 3em; }
+
+  #postcontainer {
+    margin-top: -50px; } }
 @media screen and (max-width: 650px) {
   header #logo #logotext {
     font-size: 2em;
