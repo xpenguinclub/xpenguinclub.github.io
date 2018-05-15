@@ -86,7 +86,7 @@ h1, h2 {
 	text-align: left;
 }
 h1 {
-	font-size: 7em;
+	font-size: 6em;
 }
 h2 {
 	font-size: 4em;
@@ -145,7 +145,7 @@ header {
 		display: block;
 		width: 50%;
 		max-width: 1500px;
-		margin: 120px auto 0 auto;
+		margin: 80px auto 0 auto;
 		text-align: center;
 		img {
 			max-width: 100%;
@@ -163,22 +163,28 @@ header {
 		}
 	}
 	nav {
+		line-height: 0;
+		width: 60%;
+		max-width: 1200px;
 		text-align: right;
+		margin: 0 auto;
 		ul {
-			margin: 0 0 2em 0;
-			padding: 0;
+			margin: 0;
+			padding: 1em 0 0 0;
 			li {
 				display: inline;
 				padding: 0;
 				img {
+					padding: 10px;
 					margin-left: 0.1em;
-					background-color: $title-col;
-					width: 35px;
-					height: 35px;
+					background-color: transparent;
+					width: 50px;
+					height: 50px;
 					transition: .2s;
 				}
 				img:hover {
-					background-color: $highlight-col;
+					background-color: $link-col;
+					box-shadow: 0 0 10px $link-col, 0 0 15px $link-col, 0 0 25px $link-col, 0 0 35px $link-col, 0 0 55px $link-col;
 				}
 			}
 		}
@@ -223,7 +229,7 @@ div.excerpt {
 
 article {
 	#padding-bottom: 3em;
-	padding: 5em 10em;
+	padding: 5em 7em;
 	margin-bottom: 10em;
 	box-shadow: 0 0 10px $highlight-col, 0 0 15px $highlight-col, 0 0 25px $highlight-col, 0 0 35px $highlight-col, 0 0 55px $highlight-col, 0 0 10px $highlight-col inset, 0 0 15px $highlight-col inset, 0 0 25px $highlight-col inset, 0 0 35px $highlight-col inset, 0 0 55px $highlight-col inset;
 	border: 5px solid white;
@@ -266,9 +272,9 @@ div#comments {
 	margin-top: 2em;
 }
 #postcontainer {
-	width: 80%;
-	margin: -150px auto 5em auto;
-	max-width: 1500px;
+	width: 60%;
+	margin: -200px auto 5em auto;
+	max-width: 1200px;
 }
 #back, #forth {
 	position: relative;
@@ -355,7 +361,7 @@ code {
 }
 #smallprint {
 	font-size: 0.7em;
-	color: #888;
+	color: $main-text-col;
 }
 .ytvid {
 	margin: 2em auto;
@@ -443,11 +449,12 @@ ul#share {
 	}
 	header {
 		nav {
+			width: 95%;
 			ul {
 				li {
 					img {
-						width: 50px;
-						height: 50px;
+						width: 70px;
+						height: 70px;
 					}
 				}
 			}
@@ -456,7 +463,7 @@ ul#share {
 		height: 500px;
 		#logo {
 			width: 90%;
-			margin: 30px auto 0 auto;
+			margin: 10px auto 0 auto;
 			#logotext {
 				margin-top: -70px;
 			}

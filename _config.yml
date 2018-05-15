@@ -27,15 +27,18 @@ plugins: [jekyll-paginate]
 paginate: 10 
 paginate_path: "/:num"
 links:
-    Twitter:
-        url: https://twitter.com/HexDSL
-        image: twitter_icon.png
     Atom Feed:
         url: /atom.xml 
         image: atom_icon.png
     Youtube:
         url: https://www.youtube.com/channel/UCRE3NFNtdjR96-H4QG4U1Fg
         image: youtube_icon.png
+    Twitter:
+        url: https://twitter.com/HexDSL
+        image: twitter_icon.png
+    Twitch:
+        url: https://www.twitch.tv/hexdsl/
+        image: twitch_icon.png
 authors:
     hex:
         name: HexDSL

@@ -54,7 +54,7 @@ h1, h2 {
   text-align: left; }
 
 h1 {
-  font-size: 7em; }
+  font-size: 6em; }
 
 h2 {
   font-size: 4em;
@@ -102,7 +102,7 @@ header {
     display: block;
     width: 50%;
     max-width: 1500px;
-    margin: 120px auto 0 auto;
+    margin: 80px auto 0 auto;
     text-align: center; }
     header #logo img {
       max-width: 100%;
@@ -117,21 +117,27 @@ header {
       color: #fff;
       text-shadow: 0 0 10px #00f0ff, 0 0 15px #00f0ff, 0 0 20px #00f0ff, 0 0 25px #00f0ff, 0 0 35px #00f0ff; }
   header nav {
-    text-align: right; }
+    line-height: 0;
+    width: 60%;
+    max-width: 1200px;
+    text-align: right;
+    margin: 0 auto; }
     header nav ul {
-      margin: 0 0 2em 0;
-      padding: 0; }
+      margin: 0;
+      padding: 1em 0 0 0; }
       header nav ul li {
         display: inline;
         padding: 0; }
         header nav ul li img {
+          padding: 10px;
           margin-left: 0.1em;
-          background-color: #ccc;
-          width: 35px;
-          height: 35px;
+          background-color: transparent;
+          width: 50px;
+          height: 50px;
           transition: .2s; }
         header nav ul li img:hover {
-          background-color: #00f0ff; }
+          background-color: #ff00cc;
+          box-shadow: 0 0 10px #ff00cc, 0 0 15px #ff00cc, 0 0 25px #ff00cc, 0 0 35px #ff00cc, 0 0 55px #ff00cc; }
 
 #scalecontainer {
   position: absolute;
@@ -167,7 +173,7 @@ div.excerpt {
 
 article {
   #padding-bottom: 3em;
-  padding: 5em 10em;
+  padding: 5em 7em;
   margin-bottom: 10em;
   box-shadow: 0 0 10px #00f0ff, 0 0 15px #00f0ff, 0 0 25px #00f0ff, 0 0 35px #00f0ff, 0 0 55px #00f0ff, 0 0 10px #00f0ff inset, 0 0 15px #00f0ff inset, 0 0 25px #00f0ff inset, 0 0 35px #00f0ff inset, 0 0 55px #00f0ff inset;
   border: 5px solid white;
@@ -201,9 +207,9 @@ div#comments {
   margin-top: 2em; }
 
 #postcontainer {
-  width: 80%;
-  margin: -150px auto 5em auto;
-  max-width: 1500px; }
+  width: 60%;
+  margin: -200px auto 5em auto;
+  max-width: 1200px; }
 
 #back, #forth {
   position: relative;
@@ -283,7 +289,7 @@ code {
 
 #smallprint {
   font-size: 0.7em;
-  color: #888; }
+  color: #fff; }
 
 .ytvid {
   margin: 2em auto;
@@ -353,12 +359,14 @@ ul#share {
 
   header {
     height: 500px; }
-    header nav ul li img {
-      width: 50px;
-      height: 50px; }
+    header nav {
+      width: 95%; }
+      header nav ul li img {
+        width: 70px;
+        height: 70px; }
     header #logo {
       width: 90%;
-      margin: 30px auto 0 auto; }
+      margin: 10px auto 0 auto; }
       header #logo #logotext {
         margin-top: -70px; }
 
