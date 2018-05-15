@@ -2,9 +2,9 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
  <title>Xpenguin</title>
- <link href="http://localhost:4000/atom.xml" rel="self"/>
- <link href="http://localhost:4000/"/>
- <updated>2018-05-15T16:22:19+01:00</updated>
+ <link href="http://localhost:4000atom.xml" rel="self"/>
+ <link href="http://localhost:4000"/>
+ <updated>2018-05-15T16:44:41+01:00</updated>
  <id>http://localhost:4000</id>
  
  <author>
