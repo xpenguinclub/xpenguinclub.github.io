@@ -1,15 +1,3 @@
----
-title: The one with the tinfoil hat
----
-
-Nam odio sapien, tincidunt ut ipsum sit amet, porta luctus odio. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. 
-
-Suspendisse potenti. Maecenas quis ornare nisi. Integer ut imperdiet enim. Vivamus malesuada quam vel neque iaculis elementum. Etiam feugiat semper nisl eget sollicitudin. In vestibulum consectetur lacus in pretium. Interdum et malesuada fames ac ante ipsum primis in faucibus.
-
-(This is a test description, like)
-
-<!--more-->
-
 ## Hosts
 
 ### Hamish The Polar Bear

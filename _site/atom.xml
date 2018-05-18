@@ -4,7 +4,7 @@
  <title>.Xpenguin</title>
  <link href="http://localhost:4000atom.xml" rel="self"/>
  <link href="http://localhost:4000"/>
- <updated>2018-05-15T19:41:43+01:00</updated>
+ <updated>2018-05-18T15:18:49+01:00</updated>
  <id>http://localhost:4000</id>
  
  <author>
@@ -15,22 +15,89 @@
 
  
  <entry>
-   <title>The one with the tinfoil hat</title>
+   <title>The One With Fake Hamish</title>
+   
+   <link rel="enclosure" type="audio/mpeg" href="http://xpenguin.pbmm.net/xpenguin-2018-05-14.mp3"/>
+   
+   <link href="http://localhost:4000/The-one-with-fake-Hamish/"/>
+   <updated>2018-05-14T00:00:00+01:00</updated>
+   <id>http://localhost:4000/The-one-with-fake-Hamish</id>
+   <content type="html">&lt;h2 id=&quot;hosts&quot;&gt;Hosts&lt;/h2&gt;
+
+&lt;h3 id=&quot;drew&quot;&gt;Drew&lt;/h3&gt;
+
+&lt;p&gt;&lt;strong&gt;Games:&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Star Traders: Frontiers&lt;/li&gt;
+  &lt;li&gt;Opus Magnum&lt;/li&gt;
+  &lt;li&gt;Hover&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;Current Distro:&lt;/strong&gt; Arch (i3wm)&lt;/p&gt;
+
+&lt;h3 id=&quot;sexyhexy---hexdsl&quot;&gt;‘SexyHexy’ - HexDSL&lt;/h3&gt;
+
+&lt;p&gt;&lt;strong&gt;Games:&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Star Traders: Frontiers: +1&lt;/li&gt;
+  &lt;li&gt;TrailBlazers&lt;/li&gt;
+  &lt;li&gt;For The King&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=gvZ630gOh4I&amp;amp;t=0s&quot;&gt;Final Fantasy XIV - Ref: GloriousEggroll’s DXVK video&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;This week:&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Magnetic USB Cables have changed my life!!!&lt;/li&gt;
+  &lt;li&gt;Website update? - &lt;em&gt;Screen shots for Patreon Monday&lt;/em&gt;&lt;/li&gt;
+  &lt;li&gt;Removed my Display &lt;del&gt;login&lt;/del&gt; Manager and life was better :)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;Current Distro:&lt;/strong&gt; Antergos (i3wm)&lt;/p&gt;
+
+&lt;h2 id=&quot;gaming-newsy-type-stuff&quot;&gt;Gaming Newsy Type Stuff&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.gamingonlinux.com/articles/valve-have-announced-the-steam-link-app-and-the-steam-video-app-updated.11741&quot;&gt;Steam Streaming gets good!&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://store.steampowered.com/app/396750/EVERSPACE/&quot;&gt;Everspace no longer in beta!&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.gamingonlinux.com/articles/sounds-like-linux-game-downloads-are-popular-on-game-store-itch.11749&quot;&gt;Linux is doing great on Itch.io&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://www.pcgamer.com/early-rumors-point-to-intel-unveiling-a-discrete-graphics-card-at-ces-2019&quot;&gt;Intel Graphics hard actually happening, maybe&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.phoronix.com/scan.php?page=news_item&amp;amp;px=Notepad-Linux-Line-Endings&quot;&gt;Notepad less shit now&lt;/a&gt; - the march towards Micosoft-Liunx keeps gaining pace!&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;contact-us&quot;&gt;Contact us!&lt;/h2&gt;
+
+&lt;h3 id=&quot;drew-1&quot;&gt;Drew&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;http://ludiclinux.com/&quot;&gt;Ludic Linux&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;hexdsl-sexy-hexy&quot;&gt;HexDSL &lt;em&gt;(Sexy Hexy)&lt;/em&gt;&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;http://twitch.tv/hexdsl&quot;&gt;Twitch&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://youtube.com/user/hexdsl&quot;&gt;Youtube&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://twitter.com/HexDSL&quot;&gt;Twitter&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;mailto:hexdsl@protonmail.com&quot;&gt;Email&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;on-youtube&quot;&gt;On Youtube&lt;/h2&gt;
+&lt;div class=&quot;ytvid&quot;&gt;
+&lt;iframe class=&quot;video&quot; src=&quot;https://www.youtube.com/embed/nTa8H_KogIU&quot; frameborder=&quot;0&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+</content>
+ </entry>
+ 
+ <entry>
+   <title>The One With The Tinfail Hat</title>
    
    <link rel="enclosure" type="audio/mpeg" href="http://xpenguin.pbmm.net/xpenguin-2018-05-05.mp3"/>
    
-   <link href="http://localhost:4000/The-one-with-the-tinfoil-hat/"/>
+   <link href="http://localhost:4000/The-one-with-the-tinfail-hat/"/>
    <updated>2018-05-05T00:00:00+01:00</updated>
-   <id>http://localhost:4000/The-one-with-the-tinfoil-hat</id>
-   <content type="html">&lt;p&gt;Nam odio sapien, tincidunt ut ipsum sit amet, porta luctus odio. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.&lt;/p&gt;
-
-&lt;p&gt;Suspendisse potenti. Maecenas quis ornare nisi. Integer ut imperdiet enim. Vivamus malesuada quam vel neque iaculis elementum. Etiam feugiat semper nisl eget sollicitudin. In vestibulum consectetur lacus in pretium. Interdum et malesuada fames ac ante ipsum primis in faucibus.&lt;/p&gt;
-
-&lt;p&gt;(This is a test description, like)&lt;/p&gt;
-
-&lt;!--more--&gt;
-
-&lt;h2 id=&quot;hosts&quot;&gt;Hosts&lt;/h2&gt;
+   <id>http://localhost:4000/The-one-with-the-tinfail-hat</id>
+   <content type="html">&lt;h2 id=&quot;hosts&quot;&gt;Hosts&lt;/h2&gt;
 
 &lt;h3 id=&quot;hamish-the-polar-bear&quot;&gt;Hamish The Polar Bear&lt;/h3&gt;
 
@@ -201,30 +268,7 @@
  </entry>
  
  <entry>
-   <title>A test blog post</title>
-   
-   <link href="http://localhost:4000/A-test-blog-post/"/>
-   <updated>2018-04-27T00:00:00+01:00</updated>
-   <id>http://localhost:4000/A-test-blog-post</id>
-   <content type="html">&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque suscipit dictum nisl, sed bibendum lacus convallis et. Curabitur sagittis, diam non egestas fermentum, urna felis efficitur justo, quis tristique metus leo eget urna. Curabitur aliquet sagittis quam non hendrerit. Praesent mollis, urna ut faucibus laoreet, nisl turpis molestie sapien, ut rutrum massa odio ut nibh. Nam et eros in velit aliquam pharetra.&lt;/p&gt;
-
-&lt;!--more--&gt;
-
-&lt;p&gt;Sed luctus, elit vel finibus pretium, magna tellus bibendum neque, pulvinar bibendum odio enim in leo. Pellentesque id purus vitae lacus lobortis gravida. Etiam eu lectus erat. In dictum elit enim, convallis interdum leo fringilla pellentesque. Nunc in nisi augue. Curabitur porttitor sapien eget urna ornare suscipit. Maecenas interdum sapien nec sem cursus, sit amet tempus massa pulvinar. Vivamus sodales rhoncus augue, sit amet varius sapien vehicula nec. Nullam sed tempus arcu. Quisque vehicula aliquam arcu in lobortis. Curabitur eget quam risus.&lt;/p&gt;
-
-&lt;p&gt;Sed eu vestibulum sem. Nunc eu nibh pretium, cursus dui eu, ullamcorper lorem. Maecenas vestibulum mattis diam auctor laoreet. Sed rhoncus elit sed nibh placerat, quis ullamcorper dolor varius. Duis semper consequat mollis. Donec mattis eros in feugiat cursus. Proin id ullamcorper magna, id sollicitudin diam. In pulvinar ullamcorper tellus eget rhoncus. Fusce ac nibh finibus, pretium massa sed, sodales ex. Curabitur ornare, erat laoreet ultricies varius, nunc ex vehicula nunc, ultricies ullamcorper nulla ligula at diam. Integer pulvinar lobortis vestibulum. Suspendisse volutpat felis arcu.&lt;/p&gt;
-
-&lt;p&gt;Sed id mauris velit. Praesent posuere nunc non scelerisque porta. Maecenas et viverra risus. Etiam molestie et sem eget viverra. In mi enim, ornare vel tincidunt et, ornare nec nisl. Etiam tincidunt euismod quam vitae gravida. Interdum et malesuada fames ac ante ipsum primis in faucibus. In ut ex tincidunt, scelerisque lectus lobortis, dictum odio. Morbi semper orci elit, eu feugiat urna semper a. Sed ut erat sapien. Aliquam erat volutpat. Nullam laoreet faucibus dui id tincidunt. Ut consectetur rutrum hendrerit. Aenean luctus nulla vel ipsum malesuada tempus.&lt;/p&gt;
-
-&lt;p&gt;Vestibulum porta faucibus dignissim. Suspendisse convallis pellentesque consectetur. In auctor massa mattis magna rutrum, eu consectetur libero vehicula. Maecenas luctus nec orci in tristique. Praesent ante eros, cursus ut massa nec, tincidunt bibendum purus. Vestibulum ultrices in magna sit amet vehicula. Suspendisse venenatis ullamcorper lacus, nec luctus ipsum fringilla sit amet. Ut et lorem augue. Ut rhoncus diam et odio semper malesuada. Maecenas consequat est quis facilisis imperdiet. Aliquam sit amet convallis nunc. Integer imperdiet pretium diam, eu fringilla felis vehicula non. Vivamus vel est arcu. Quisque fermentum congue orci sit amet convallis. Nulla mattis posuere ante, nec sollicitudin sem condimentum sed.&lt;/p&gt;
-
-&lt;p&gt;Nam odio sapien, tincidunt ut ipsum sit amet, porta luctus odio. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Suspendisse potenti. Maecenas quis ornare nisi. Integer ut imperdiet enim. Vivamus malesuada quam vel neque iaculis elementum. Etiam feugiat semper nisl eget sollicitudin. In vestibulum consectetur lacus in pretium. Interdum et malesuada fames ac ante ipsum primis in faucibus.&lt;/p&gt;
-
-</content>
- </entry>
- 
- <entry>
-   <title>The one where Hamish gets confused!</title>
+   <title>The One Where Hamish Got Confused</title>
    
    <link rel="enclosure" type="audio/mpeg" href="http://xpenguin.pbmm.net/xpenguin-2018-04-22.mp3"/>
    
@@ -302,7 +346,7 @@
  </entry>
  
  <entry>
-   <title>The one where Uncle Hamish hates on Windows</title>
+   <title>The One Where Uncle Hamish Hates On Windows</title>
    
    <link rel="enclosure" type="audio/mpeg" href="http://xpenguin.pbmm.net/xpenguin-2018-04-08.mp3"/>
    

@@ -76,6 +76,7 @@ h2 {
   color: #00f0ff; }
 
 h3 {
+  margin: 0;
   font-family: Digibold;
   font-size: 2.5em;
   letter-spacing: 3px;
@@ -203,6 +204,18 @@ article {
     font-family: Digi;
     font-size: 1.5em;
     text-align: right; }
+  article#welcome {
+    box-shadow: 0 0 10px #ff00cc, 0 0 15px #ff00cc, 0 0 25px #ff00cc, 0 0 35px #ff00cc, 0 0 55px #ff00cc, 0 0 10px #ff00cc inset, 0 0 15px #ff00cc inset, 0 0 25px #ff00cc inset, 0 0 35px #ff00cc inset, 0 0 55px #ff00cc inset; }
+    article#welcome:hover {
+      box-shadow: none;
+      border-color: #ff00cc; }
+    article#welcome h3 {
+      transition: text-shadow 0.5s, color 0.5s;
+      color: #fff;
+      text-shadow: 0 0 10px #00f0ff, 0 0 15px #00f0ff, 0 0 20px #00f0ff, 0 0 25px #00f0ff, 0 0 35px #00f0ff; }
+      article#welcome h3:hover {
+        text-shadow: none;
+        color: #00f0ff; }
 
 div#postcontent {
   margin: 2em 0 5em 0; }
@@ -217,7 +230,7 @@ div#postcontent {
       font-size: 0.8em;
       padding: 0.7em; }
   div#postcontent h2, div#postcontent h3, div#postcontent h4 {
-    margin-top: 2em; }
+    margin-top: 1em; }
   div#postcontent code {
     margin: 0;
     padding: 0.1em; }

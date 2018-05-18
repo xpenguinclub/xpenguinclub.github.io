@@ -1,7 +1,3 @@
----
-title: The one where Hamish gets confused!
----
-
 ## Hosts
 
 ### Hamish The Polar Bear

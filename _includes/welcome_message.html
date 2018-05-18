@@ -1,0 +1,9 @@
+{% if site.welcome %}
+<li>
+	<article id="welcome">
+		<h3>Welcome to .Xpenguin</h3>
+		{{ site.welcome | markdownify }}
+	</article>
+</li>
+{% endif %}
+

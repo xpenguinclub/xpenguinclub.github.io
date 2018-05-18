@@ -7,6 +7,9 @@ subtitle: "A weekly Linux gaming podcast"
 {% include site_header.html %}
 <section id="pagelist">
 	<ul id="pages">
+		{% if paginator.page == 1 %}
+			{% include welcome_message.html %}
+		{% endif %}
 		{% for page in paginator.posts %}
 			<li>
 				<article>

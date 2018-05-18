@@ -1,7 +1,3 @@
----
-title: The one where Uncle Hamish hates on Windows
----
-
 ## Hosts
 
 ### Hamish The Polar Bear
