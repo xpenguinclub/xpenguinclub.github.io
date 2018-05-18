@@ -4,7 +4,7 @@
  <title>.Xpenguin</title>
  <link href="http://localhost:4000atom.xml" rel="self"/>
  <link href="http://localhost:4000"/>
- <updated>2018-05-18T15:18:49+01:00</updated>
+ <updated>2018-05-18T16:40:07+01:00</updated>
  <id>http://localhost:4000</id>
  
  <author>
@@ -22,71 +22,6 @@
    <link href="http://localhost:4000/The-one-with-fake-Hamish/"/>
    <updated>2018-05-14T00:00:00+01:00</updated>
    <id>http://localhost:4000/The-one-with-fake-Hamish</id>
-   <content type="html">&lt;h2 id=&quot;hosts&quot;&gt;Hosts&lt;/h2&gt;
-
-&lt;h3 id=&quot;drew&quot;&gt;Drew&lt;/h3&gt;
-
-&lt;p&gt;&lt;strong&gt;Games:&lt;/strong&gt;&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;Star Traders: Frontiers&lt;/li&gt;
-  &lt;li&gt;Opus Magnum&lt;/li&gt;
-  &lt;li&gt;Hover&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;strong&gt;Current Distro:&lt;/strong&gt; Arch (i3wm)&lt;/p&gt;
-
-&lt;h3 id=&quot;sexyhexy---hexdsl&quot;&gt;‘SexyHexy’ - HexDSL&lt;/h3&gt;
-
-&lt;p&gt;&lt;strong&gt;Games:&lt;/strong&gt;&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;Star Traders: Frontiers: +1&lt;/li&gt;
-  &lt;li&gt;TrailBlazers&lt;/li&gt;
-  &lt;li&gt;For The King&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=gvZ630gOh4I&amp;amp;t=0s&quot;&gt;Final Fantasy XIV - Ref: GloriousEggroll’s DXVK video&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;strong&gt;This week:&lt;/strong&gt;&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;Magnetic USB Cables have changed my life!!!&lt;/li&gt;
-  &lt;li&gt;Website update? - &lt;em&gt;Screen shots for Patreon Monday&lt;/em&gt;&lt;/li&gt;
-  &lt;li&gt;Removed my Display &lt;del&gt;login&lt;/del&gt; Manager and life was better :)&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;strong&gt;Current Distro:&lt;/strong&gt; Antergos (i3wm)&lt;/p&gt;
-
-&lt;h2 id=&quot;gaming-newsy-type-stuff&quot;&gt;Gaming Newsy Type Stuff&lt;/h2&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;https://www.gamingonlinux.com/articles/valve-have-announced-the-steam-link-app-and-the-steam-video-app-updated.11741&quot;&gt;Steam Streaming gets good!&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://store.steampowered.com/app/396750/EVERSPACE/&quot;&gt;Everspace no longer in beta!&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://www.gamingonlinux.com/articles/sounds-like-linux-game-downloads-are-popular-on-game-store-itch.11749&quot;&gt;Linux is doing great on Itch.io&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;http://www.pcgamer.com/early-rumors-point-to-intel-unveiling-a-discrete-graphics-card-at-ces-2019&quot;&gt;Intel Graphics hard actually happening, maybe&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://www.phoronix.com/scan.php?page=news_item&amp;amp;px=Notepad-Linux-Line-Endings&quot;&gt;Notepad less shit now&lt;/a&gt; - the march towards Micosoft-Liunx keeps gaining pace!&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&quot;contact-us&quot;&gt;Contact us!&lt;/h2&gt;
-
-&lt;h3 id=&quot;drew-1&quot;&gt;Drew&lt;/h3&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;http://ludiclinux.com/&quot;&gt;Ludic Linux&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&quot;hexdsl-sexy-hexy&quot;&gt;HexDSL &lt;em&gt;(Sexy Hexy)&lt;/em&gt;&lt;/h3&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;http://twitch.tv/hexdsl&quot;&gt;Twitch&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;http://youtube.com/user/hexdsl&quot;&gt;Youtube&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://twitter.com/HexDSL&quot;&gt;Twitter&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;mailto:hexdsl@protonmail.com&quot;&gt;Email&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&quot;on-youtube&quot;&gt;On Youtube&lt;/h2&gt;
-&lt;div class=&quot;ytvid&quot;&gt;
-&lt;iframe class=&quot;video&quot; src=&quot;https://www.youtube.com/embed/nTa8H_KogIU&quot; frameborder=&quot;0&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
-&lt;/div&gt;
-
-</content>
  </entry>
  
  <entry>
@@ -97,76 +32,6 @@
    <link href="http://localhost:4000/The-one-with-the-tinfail-hat/"/>
    <updated>2018-05-05T00:00:00+01:00</updated>
    <id>http://localhost:4000/The-one-with-the-tinfail-hat</id>
-   <content type="html">&lt;h2 id=&quot;hosts&quot;&gt;Hosts&lt;/h2&gt;
-
-&lt;h3 id=&quot;hamish-the-polar-bear&quot;&gt;Hamish The Polar Bear&lt;/h3&gt;
-
-&lt;p&gt;&lt;strong&gt;Games:&lt;/strong&gt;&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;Insurgency&lt;/li&gt;
-  &lt;li&gt;Day of Infamy&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;(So nothing new, sorry! I promise to play more games in future.)&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;This week:&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Current Distro:&lt;/strong&gt; Arch (w/i3wm)&lt;/p&gt;
-
-&lt;h3 id=&quot;sexyhexy---hexdsl&quot;&gt;‘SexyHexy’ - HexDSL&lt;/h3&gt;
-
-&lt;p&gt;&lt;strong&gt;Games:&lt;/strong&gt;&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;Super Inefficient golf&lt;/li&gt;
-  &lt;li&gt;Meadow&lt;/li&gt;
-  &lt;li&gt;Vikings: WOM (Angry lady: the game!)&lt;/li&gt;
-  &lt;li&gt;Overwatch (&lt;em&gt;wine DXVK - Use as jumping point for ArchToastys video topic&lt;/em&gt;)&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;strong&gt;This week:&lt;/strong&gt;&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;Website update? - NO updates at this time, should be some by next weeks show (Patreon update will go live before it goes public)&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;strong&gt;Current Distro:&lt;/strong&gt; Antergos (i3wm)&lt;/p&gt;
-
-&lt;h2 id=&quot;the-not-news&quot;&gt;The Not News!&lt;/h2&gt;
-
-&lt;p&gt;NOTE: Reduced articles to make more room for discussion :)&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Twitter password change advisory.&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=0PmBM7Wp1zg&amp;amp;t=911s&quot;&gt;Arch Toasty explains DXVK like a beast! (and makes Overwatch better)&lt;/a&gt; - Got my OW working in DXVK now&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://www.phoronix.com/scan.php?page=news_item&amp;amp;px=Steam-Switch-Pro-Controller&quot;&gt;Steam adds support for Switch Pro Controller&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://images.duckduckgo.com/iu/?u=http%3A%2F%2Fcdn.wccftech.com%2Fwp-content%2Fuploads%2F2017%2F02%2FNintendo-Switch-Pro-Controller.jpg&amp;amp;f=1&quot;&gt;Here’s an image of the controller&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://store.steampowered.com/app/599390/Battle_for_Wesnoth/&quot;&gt;Battle for Wesnoth on steam&lt;/a&gt; - Discuss Open source games on steam? as revenue source?&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&quot;contact-us&quot;&gt;Contact us!&lt;/h2&gt;
-
-&lt;h3 id=&quot;hamish-the-polarbear-hamishtpb&quot;&gt;Hamish The PolarBear &lt;em&gt;(HamishTPB)&lt;/em&gt;&lt;/h3&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;https://twitch.tv/hamishtpb&quot;&gt;Twitch&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://www.youtube.com/channel/UCp1mWfjYbMcmNowBmvTUCag&quot;&gt;YouTube&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;mailto:hamish@thepolarbear.co.uk&quot;&gt;Email&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&quot;hexdsl-sexy-hexy&quot;&gt;HexDSL &lt;em&gt;(Sexy Hexy)&lt;/em&gt;&lt;/h3&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;http://twitch.tv/hexdsl&quot;&gt;Twitch&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;http://youtube.com/user/hexdsl&quot;&gt;Youtube&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://twitter.com/HexDSL&quot;&gt;Twitter&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;mailto:hexdsl@protonmail.com&quot;&gt;Email&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&quot;on-youtube&quot;&gt;On Youtube&lt;/h2&gt;
-&lt;div class=&quot;ytvid&quot;&gt;
-&lt;iframe class=&quot;video&quot; src=&quot;https://www.youtube.com/embed/zBpbJ89-LVI&quot; frameborder=&quot;0&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
-&lt;/div&gt;
-
-</content>
  </entry>
  
  <entry>
@@ -177,94 +42,6 @@
    <link href="http://localhost:4000/Weekly-Linux-gaming-talk/"/>
    <updated>2018-04-28T00:00:00+01:00</updated>
    <id>http://localhost:4000/Weekly-Linux-gaming-talk</id>
-   <content type="html">&lt;p&gt;&lt;strong&gt;&lt;em&gt;NOTE:&lt;/em&gt;&lt;/strong&gt; &lt;em&gt;focussing less on games played this week to make room for ‘show changes’ section.&lt;/em&gt;&lt;/p&gt;
-
-&lt;h2 id=&quot;hosts&quot;&gt;Hosts&lt;/h2&gt;
-
-&lt;h3 id=&quot;hamish-the-polar-bear&quot;&gt;Hamish The Polar Bear&lt;/h3&gt;
-
-&lt;p&gt;&lt;strong&gt;Games:&lt;/strong&gt;&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;Insurgency &amp;amp; Day of Infamy
-    &lt;ul&gt;
-      &lt;li&gt;Fix for Linux players not showing online.&lt;/li&gt;
-      &lt;li&gt;Loadout Scripts. (WIP)&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;strong&gt;This week:&lt;/strong&gt;&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;http://www.bbc.co.uk/news/uk-scotland-highlands-islands-43911187&quot;&gt;HAMISH IS A FUCKING POLAR BEAR&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;strong&gt;Current Distro:&lt;/strong&gt; Arch (w/i3wm) (Main PC) / KXStudio (Laptop)&lt;/p&gt;
-
-&lt;h3 id=&quot;sexyhexy---hexdsl&quot;&gt;‘SexyHexy’ - HexDSL&lt;/h3&gt;
-
-&lt;p&gt;&lt;strong&gt;Games:&lt;/strong&gt;&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;Retro Gaming
-    &lt;ul&gt;
-      &lt;li&gt;Truxton &lt;em&gt;(Megadrive)&lt;/em&gt;&lt;/li&gt;
-      &lt;li&gt;Shining Force &lt;em&gt;(Megadrive)&lt;/em&gt;&lt;/li&gt;
-      &lt;li&gt;Alien Hominid &lt;em&gt;(Gameboy Advance)&lt;/em&gt;&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;strong&gt;This week:&lt;/strong&gt;&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;Changes to channel (and .XPenguin show)
-    &lt;ul&gt;
-      &lt;li&gt;.XP gets its own full website this week.&lt;/li&gt;
-      &lt;li&gt;RSS feed for .XP coming as part of the website.&lt;/li&gt;
-      &lt;li&gt;Show notes published weekly on the website with fill links.&lt;/li&gt;
-      &lt;li&gt;.XP is now weekly! (but shorter)&lt;/li&gt;
-      &lt;li&gt;Thanks Drew &amp;amp; Hamish for &lt;strong&gt;literally&lt;/strong&gt; doing all the work on this!&lt;/li&gt;
-      &lt;li&gt;I’m Dropping the ‘&lt;strong&gt;Bazaar&lt;/strong&gt;’ Branding for the Wednesday Videos (will retrun for ‘specials’)&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;strong&gt;Current Distro:&lt;/strong&gt; Antergos (i3wm)&lt;/p&gt;
-
-&lt;h2 id=&quot;the-not-news&quot;&gt;The Not News!&lt;/h2&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;https://www.reddit.com/r/linux_gaming/comments/8edkjq/whats_the_point_of_ditching_windows_even_for/&quot;&gt;Kebal Spy Program?&lt;/a&gt; - this is more to do with teh publishers generic EULA.&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=UTAeDoRIHaA&quot;&gt;Godot Engine 2018 Showcase&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://gbatemp.net/threads/ubuntu-18-04-on-a-switch.502147/&quot;&gt;Nintendo Switch runs Ubuntu now (Ubuntendo?)&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://www.washingtonpost.com/amphtml/news/true-crime/wp/2018/04/24/recycling-innovator-eric-lundgren-loses-appeal-on-computer-restore-discs-must-serve-15-month-prison-term/?noredirect=on&quot;&gt;This court case about restore disks.. should have used Linux my dude.&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://techcrunch.com/2018/04/27/microsoft-attempts-to-spin-its-role-in-counterfeiting-case/&quot;&gt;Tech crunch get it!&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&quot;contact-us&quot;&gt;Contact us!&lt;/h2&gt;
-
-&lt;h3 id=&quot;hamish-the-polarbear-hamishtpb&quot;&gt;Hamish The PolarBear &lt;em&gt;(HamishTPB)&lt;/em&gt;&lt;/h3&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;https://twitch.tv/hamishtpb&quot;&gt;Twitch&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://www.youtube.com/channel/UCp1mWfjYbMcmNowBmvTUCag&quot;&gt;YouTube&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;mailto:hamish@thepolarbear.co.uk&quot;&gt;Email&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&quot;hexdsl-sexy-hexy&quot;&gt;HexDSL &lt;em&gt;(Sexy Hexy)&lt;/em&gt;&lt;/h3&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;http://twitch.tv/hexdsl&quot;&gt;Twitch&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;http://youtube.com/user/hexdsl&quot;&gt;Youtube&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://twitter.com/HexDSL&quot;&gt;Twitter&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;mailto:hexdsl@protonmail.com&quot;&gt;Email&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&quot;on-youtube&quot;&gt;On Youtube&lt;/h2&gt;
-
-&lt;div class=&quot;ytvid&quot;&gt;
-&lt;iframe class=&quot;video&quot; src=&quot;https://www.youtube.com/embed/ShOyj-gIRHE&quot; frameborder=&quot;0&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
-&lt;/div&gt;
-
-</content>
  </entry>
  
  <entry>
@@ -275,74 +52,6 @@
    <link href="http://localhost:4000/The-one-where-Hamish-got-confused/"/>
    <updated>2018-04-22T00:00:00+01:00</updated>
    <id>http://localhost:4000/The-one-where-Hamish-got-confused</id>
-   <content type="html">&lt;h2 id=&quot;hosts&quot;&gt;Hosts&lt;/h2&gt;
-
-&lt;h3 id=&quot;hamish-the-polar-bear&quot;&gt;Hamish The Polar Bear&lt;/h3&gt;
-
-&lt;p&gt;&lt;strong&gt;Games:&lt;/strong&gt;&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;Insurgency&lt;/li&gt;
-  &lt;li&gt;Ballistic Overkill&lt;/li&gt;
-  &lt;li&gt;CS:GO&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;strong&gt;This week:&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Current Distro:&lt;/strong&gt; Arch (w/i3wm) (Main PC) / KXStudio (Laptop)&lt;/p&gt;
-
-&lt;h3 id=&quot;sexyhexy---hexdsl&quot;&gt;‘SexyHexy’ - HexDSL&lt;/h3&gt;
-
-&lt;p&gt;&lt;strong&gt;Games:&lt;/strong&gt;&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;Titan Quest (WINE)&lt;/li&gt;
-  &lt;li&gt;The Spatials&lt;/li&gt;
-  &lt;li&gt;Overwatch (overWINE)&lt;/li&gt;
-  &lt;li&gt;Rise of the Tomb Raider (&lt;strong&gt;only BETA drivers supported!&lt;/strong&gt;)&lt;/li&gt;
-  &lt;li&gt;DEADCELLS (WINE)&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;strong&gt;This week:&lt;/strong&gt; Retroarch on android is crappy.. apparently :/&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Current Distro:&lt;/strong&gt; Antergos (i3wm)&lt;/p&gt;
-
-&lt;h2 id=&quot;the-not-news&quot;&gt;The Not News!&lt;/h2&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;https://github.com/FeralInteractive/gamemode&quot;&gt;Feral game optio…. feral talk shit&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://www.gamingonlinux.com/articles/nightdive-studios-show-off-how-system-shock-is-returning-to-the-original-vision.11588&quot;&gt;System Shock IS happening.. again&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://i.redditmedia.com/bvRgCkiAsCfI8L9sdy30dFYx81W1H91cfX1OWz9l4y8.png?w=685&amp;amp;s=d64a9a4b6122760ec5bd1ffb806b8c82&quot;&gt;Full circle? - a tweet about giving stuff to people!&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;http://uk.businessinsider.com/microsoft-azure-sphere-is-powered-by-linux-2018-4?r=US&amp;amp;IR=T&quot;&gt;Microsoft shipping a ditro (server side)&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://www.gamingonlinux.com/articles/nvidia-dropping-support-for-32bit-linux-this-month-also-dropping-fermi-series-support.11559&quot;&gt;nvidia drops support for 32bit&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://www.humblebundle.com/store/for-the-king?partner=gamingonlinux&amp;amp;charity=162818&quot;&gt;For the King game left EA but BROKEN ON LINUX, DO NOT BUY (YET)&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;http://store.steampowered.com/app/257420/Serious_Sam_4_Planet_Badass/&quot;&gt;Serious sam  4 has steam page ALREADY has linux listed!!!&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&quot;contact-us&quot;&gt;Contact us!&lt;/h2&gt;
-
-&lt;h3 id=&quot;hamish-the-polarbear-hamishtpb&quot;&gt;Hamish The PolarBear &lt;em&gt;(HamishTPB)&lt;/em&gt;&lt;/h3&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;https://twitch.tv/hamishtpb&quot;&gt;Twitch&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://www.youtube.com/channel/UCp1mWfjYbMcmNowBmvTUCag&quot;&gt;YouTube&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;mailto:hamish@thepolarbear.co.uk&quot;&gt;Email&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&quot;hexdsl-sexy-hexy&quot;&gt;HexDSL &lt;em&gt;(Sexy Hexy)&lt;/em&gt;&lt;/h3&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;http://twitch.tv/hexdsl&quot;&gt;Twitch&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;http://youtube.com/user/hexdsl&quot;&gt;Youtube&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://twitter.com/HexDSL&quot;&gt;Twitter&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;mailto:hexdsl@protonmail.com&quot;&gt;Email&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&quot;on-youtube&quot;&gt;On Youtube&lt;/h2&gt;
-
-&lt;div class=&quot;ytvid&quot;&gt;
-&lt;iframe class=&quot;video&quot; src=&quot;https://www.youtube.com/embed/drl_Oz5gzOk&quot; frameborder=&quot;0&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
-&lt;/div&gt;
-
-</content>
  </entry>
  
  <entry>
@@ -353,78 +62,6 @@
    <link href="http://localhost:4000/The-one-where-uncle-Hamish-hates-on-Windows/"/>
    <updated>2018-04-08T00:00:00+01:00</updated>
    <id>http://localhost:4000/The-one-where-uncle-Hamish-hates-on-Windows</id>
-   <content type="html">&lt;h2 id=&quot;hosts&quot;&gt;Hosts&lt;/h2&gt;
-
-&lt;h3 id=&quot;hamish-the-polar-bear&quot;&gt;Hamish The Polar Bear&lt;/h3&gt;
-
-&lt;p&gt;&lt;strong&gt;Games:&lt;/strong&gt;&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;Layers of Fear: Inheritance&lt;/li&gt;
-  &lt;li&gt;Insurgency&lt;/li&gt;
-  &lt;li&gt;Insurgency&lt;/li&gt;
-  &lt;li&gt;Pacman 256&lt;/li&gt;
-  &lt;li&gt;Insurgency&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;strong&gt;This week:&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Current Distro:&lt;/strong&gt; Arch (w/i3wm) (Main PC) / KXStudio (Laptop)&lt;/p&gt;
-
-&lt;h3 id=&quot;sexyhexy---hexdsl&quot;&gt;‘SexyHexy’ - HexDSL&lt;/h3&gt;
-
-&lt;p&gt;&lt;strong&gt;Games:&lt;/strong&gt;&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;Strafe&lt;/li&gt;
-  &lt;li&gt;Minit&lt;/li&gt;
-  &lt;li&gt;Ruiner&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;strong&gt;This week:&lt;/strong&gt; Nothing…. not one thing&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Current Distro:&lt;/strong&gt; Antergos (i3wm)&lt;/p&gt;
-
-&lt;h2 id=&quot;the-not-news&quot;&gt;The Not News!&lt;/h2&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;https://www.gamingonlinux.com/articles/valve-has-removed-the-steam-machine-section-from-steam.11505&quot;&gt;Steammachine section of Steam gone&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://boilingsteam.com/valve-still-loves-linux-and-aims-for-more/&quot;&gt;YES, Valve still love us&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://albiononline.com/en/news/steam-launch-announcement&quot;&gt;Albion online is coming to Steam&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://www.omgubuntu.co.uk/2018/03/gnome-shell-memory-leak-is-being-fixed&quot;&gt;Gnome memory leak fixed&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://www.omgubuntu.co.uk/2018/03/two-factor-authentication-code-generator-linux&quot;&gt;2step, from our desktop?&lt;/a&gt; &lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;http://money.cnn.com/2018/03/29/news/companies/microsoft-restructuring-windows/index.html&quot;&gt;Microsoft de-emphasising Windows.. So, it begins&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://www.reddit.com/r/Ubuntu/comments/870bcn/snap\_support\_for\_peek\_screen\_recorder\_discontinued/&quot;&gt;Peek App drops snap support&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://www.omgubuntu.co.uk/2018/03/intel-graphics-update-tool-discontinued&quot;&gt;Intel axe update tool&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;http://ludiclinux.com/Deus-Ex-Mankind-Divided/&quot;&gt;Drew (OUUO, UOOU, Katniss) wrote stuff&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=pjbZ2NoP5uo&quot; title=&quot;https://www.youtube.com/watch?v=pjbZ2NoP5uo&quot;&gt;Nusuey made a video&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://obsproject.com/blog/obs-community-feedback-fider-launched&quot;&gt;OBS Have Implimented a Suggestions Page&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&quot;contact-us&quot;&gt;Contact us!&lt;/h2&gt;
-
-&lt;h3 id=&quot;hamish-the-polarbear-hamishtpb&quot;&gt;Hamish The PolarBear &lt;em&gt;(HamishTPB)&lt;/em&gt;&lt;/h3&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;https://twitch.tv/hamishtpb&quot;&gt;Twitch&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://www.youtube.com/channel/UCp1mWfjYbMcmNowBmvTUCag&quot;&gt;YouTube&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;mailto:hamish@thepolarbear.co.uk&quot;&gt;Email&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&quot;hexdsl-sexy-hexy&quot;&gt;HexDSL &lt;em&gt;(Sexy Hexy)&lt;/em&gt;&lt;/h3&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;http://twitch.tv/hexdsl&quot;&gt;Twitch&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;http://youtube.com/user/hexdsl&quot;&gt;Youtube&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://twitter.com/HexDSL&quot;&gt;Twitter&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;mailto:hexdsl@protonmail.com&quot;&gt;Email&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&quot;on-youtube&quot;&gt;On Youtube&lt;/h2&gt;
-
-&lt;div class=&quot;ytvid&quot;&gt;
-&lt;iframe class=&quot;video&quot; src=&quot;https://www.youtube.com/embed/9nwq0UCnS8g&quot; frameborder=&quot;0&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
-&lt;/div&gt;
-
-</content>
  </entry>
  
 
