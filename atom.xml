@@ -4,28 +4,13 @@ layout: null
 
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-
  <title>{{ site.name }}</title>
- <link href="{{ site.url }}atom.xml" rel="self"/>
- <link href="{{ site.url }}"/>
- <updated>{{ site.time | date_to_xmlschema }}</updated>
- <id>{{ site.url }}</id>
- {% for author in site.authors limit:1 %}
- <author>
-   <name>{{ author[1].name }}</name>
-   <email>{{ author[1].email }}</email>
- {% endfor %}
- </author>
-
  {% for post in site.posts %}
  <entry>
    <title>{{ post.title | xml_escape }}</title>
    {% if post.podcast %}
    <link rel="enclosure" type="audio/mpeg" href="{{ site.mp3url }}xpenguin-{{ post.date | date: '%Y-%m-%d' }}.mp3"/>
    {% endif %}
-   <updated>{{ post.date | date_to_xmlschema }}</updated>
-   <id>{{ site.url }}{{ post.id }}</id>
  </entry>
  {% endfor %}
-
 </feed>
