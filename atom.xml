@@ -2,15 +2,16 @@
 layout: null
 ---
 
-<?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom">
+<rss version="2.0">
+<channel>
  <title>{{ site.name }}</title>
  {% for post in site.posts %}
- <entry>
+ <item>
    <title>{{ post.title | xml_escape }}</title>
    {% if post.podcast %}
-   <link rel="enclosure" type="audio/mpeg" href="{{ site.mp3url }}xpenguin-{{ post.date | date: '%Y-%m-%d' }}.mp3" length="500" />
+   <enclosure type="audio/mpeg" url="{{ site.mp3url }}xpenguin-{{ post.date | date: '%Y-%m-%d' }}.mp3" />
    {% endif %}
- </entry>
+ </item>
  {% endfor %}
-</feed>
+</channel>
+</rss>

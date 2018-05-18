@@ -1,40 +1,41 @@
-<?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom">
+<rss version="2.0">
+<channel>
  <title>.Xpenguin</title>
  
- <entry>
+ <item>
    <title>The One With Fake Hamish</title>
    
-   <link rel="enclosure" type="audio/mpeg" href="http://xpenguin.pbmm.net/xpenguin-2018-05-14.mp3" length="500" />
+   <enclosure type="audio/mpeg" url="http://xpenguin.pbmm.net/xpenguin-2018-05-14.mp3" />
    
- </entry>
+ </item>
  
- <entry>
+ <item>
    <title>The One With The Tinfail Hat</title>
    
-   <link rel="enclosure" type="audio/mpeg" href="http://xpenguin.pbmm.net/xpenguin-2018-05-05.mp3" length="500" />
+   <enclosure type="audio/mpeg" url="http://xpenguin.pbmm.net/xpenguin-2018-05-05.mp3" />
    
- </entry>
+ </item>
  
- <entry>
+ <item>
    <title>Weekly Linux Gaming Talk</title>
    
-   <link rel="enclosure" type="audio/mpeg" href="http://xpenguin.pbmm.net/xpenguin-2018-04-28.mp3" length="500" />
+   <enclosure type="audio/mpeg" url="http://xpenguin.pbmm.net/xpenguin-2018-04-28.mp3" />
    
- </entry>
+ </item>
  
- <entry>
+ <item>
    <title>The One Where Hamish Got Confused</title>
    
-   <link rel="enclosure" type="audio/mpeg" href="http://xpenguin.pbmm.net/xpenguin-2018-04-22.mp3" length="500" />
+   <enclosure type="audio/mpeg" url="http://xpenguin.pbmm.net/xpenguin-2018-04-22.mp3" />
    
- </entry>
+ </item>
  
- <entry>
+ <item>
    <title>The One Where Uncle Hamish Hates On Windows</title>
    
-   <link rel="enclosure" type="audio/mpeg" href="http://xpenguin.pbmm.net/xpenguin-2018-04-08.mp3" length="500" />
+   <enclosure type="audio/mpeg" url="http://xpenguin.pbmm.net/xpenguin-2018-04-08.mp3" />
    
- </entry>
+ </item>
  
-</feed>
+</channel>
+</rss>
