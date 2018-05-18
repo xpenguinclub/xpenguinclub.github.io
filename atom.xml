@@ -9,7 +9,7 @@ layout: null
  <entry>
    <title>{{ post.title | xml_escape }}</title>
    {% if post.podcast %}
-   <link rel="enclosure" type="audio/mpeg" href="{{ site.mp3url }}xpenguin-{{ post.date | date: '%Y-%m-%d' }}.mp3"/>
+   <link rel="enclosure" type="audio/mpeg" href="{{ site.mp3url }}xpenguin-{{ post.date | date: '%Y-%m-%d' }}.mp3" length="500" />
    {% endif %}
  </entry>
  {% endfor %}
