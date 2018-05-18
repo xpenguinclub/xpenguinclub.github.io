@@ -1,0 +1,58 @@
+<rss version="2.0">
+<channel>
+ <title>.Xpenguin</title>
+ <link href="http://localhost:4000/"/>
+ <author>hexdsl@protonmail.com</author>
+ 
+ <item>
+   <title>The One With Fake Hamish</title>
+   
+   <enclosure type="audio/mpeg" url="http://xpenguin.pbmm.net/xpenguin-2018-05-14.mp3" />
+   
+   <link href="http://localhost:4000/The-one-with-fake-Hamish/"/>
+   <guid isPermaLink="true">http://localhost:4000/The-one-with-fake-Hamish/</guid>
+   <pubDate>2018-05-14T00:00:00+01:00</pubDate>
+ </item>
+ 
+ <item>
+   <title>The One With The Tinfail Hat</title>
+   
+   <enclosure type="audio/mpeg" url="http://xpenguin.pbmm.net/xpenguin-2018-05-05.mp3" />
+   
+   <link href="http://localhost:4000/The-one-with-the-tinfail-hat/"/>
+   <guid isPermaLink="true">http://localhost:4000/The-one-with-the-tinfail-hat/</guid>
+   <pubDate>2018-05-05T00:00:00+01:00</pubDate>
+ </item>
+ 
+ <item>
+   <title>Weekly Linux Gaming Talk</title>
+   
+   <enclosure type="audio/mpeg" url="http://xpenguin.pbmm.net/xpenguin-2018-04-28.mp3" />
+   
+   <link href="http://localhost:4000/Weekly-Linux-gaming-talk/"/>
+   <guid isPermaLink="true">http://localhost:4000/Weekly-Linux-gaming-talk/</guid>
+   <pubDate>2018-04-28T00:00:00+01:00</pubDate>
+ </item>
+ 
+ <item>
+   <title>The One Where Hamish Got Confused</title>
+   
+   <enclosure type="audio/mpeg" url="http://xpenguin.pbmm.net/xpenguin-2018-04-22.mp3" />
+   
+   <link href="http://localhost:4000/The-one-where-Hamish-got-confused/"/>
+   <guid isPermaLink="true">http://localhost:4000/The-one-where-Hamish-got-confused/</guid>
+   <pubDate>2018-04-22T00:00:00+01:00</pubDate>
+ </item>
+ 
+ <item>
+   <title>The One Where Uncle Hamish Hates On Windows</title>
+   
+   <enclosure type="audio/mpeg" url="http://xpenguin.pbmm.net/xpenguin-2018-04-08.mp3" />
+   
+   <link href="http://localhost:4000/The-one-where-uncle-Hamish-hates-on-Windows/"/>
+   <guid isPermaLink="true">http://localhost:4000/The-one-where-uncle-Hamish-hates-on-Windows/</guid>
+   <pubDate>2018-04-08T00:00:00+01:00</pubDate>
+ </item>
+ 
+</channel>
+</rss>

@@ -5,12 +5,17 @@ layout: null
 <rss version="2.0">
 <channel>
  <title>{{ site.name }}</title>
+ <link href="{{ site.url }}/"/>
+ <author>hexdsl@protonmail.com</author>
  {% for post in site.posts %}
  <item>
    <title>{{ post.title | xml_escape }}</title>
    {% if post.podcast %}
    <enclosure type="audio/mpeg" url="{{ site.mp3url }}xpenguin-{{ post.date | date: '%Y-%m-%d' }}.mp3" />
    {% endif %}
+   <link href="{{ site.url }}{{ post.url }}"/>
+   <guid isPermaLink="true">{{ site.url }}{{ post.url }}</guid>
+   <pubDate>{{ post.date | date_to_xmlschema }}</pubDate>
  </item>
  {% endfor %}
 </channel>

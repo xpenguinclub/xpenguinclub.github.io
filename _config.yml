@@ -6,7 +6,7 @@ baseurl: ""
 imagedir: "/images/"
 twitter_username: HexDSL
 welcome: "A weekly Linux gaming podcast hosted by [HexDSL](https://www.youtube.com/channel/UCRE3NFNtdjR96-H4QG4U1Fgl) and [HamishTPB](https://www.youtube.com/channel/UCp1mWfjYbMcmNowBmvTUCag).
-\n\nYou can subscribe to the podcast [here](/atom.xml) and find HexDSL on Youtube [here](https://www.youtube.com/channel/UCRE3NFNtdjR96-H4QG4U1Fg)."
+\n\nYou can subscribe to the podcast [here](/rss.xml) and find HexDSL on Youtube [here](https://www.youtube.com/channel/UCRE3NFNtdjR96-H4QG4U1Fg)."
 defaults:
     -   
         scope:
@@ -30,7 +30,7 @@ paginate: 5
 paginate_path: "/:num"
 links:
     Atom Feed:
-        url: /atom.xml 
+        url: /rss.xml 
         image: atom_icon.png
     Youtube:
         url: https://www.youtube.com/channel/UCRE3NFNtdjR96-H4QG4U1Fg
