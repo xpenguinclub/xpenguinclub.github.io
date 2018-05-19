@@ -8,7 +8,7 @@ layout: null
  <link href="{{ site.url }}/"/>
  <author>hexdsl@protonmail.com</author>
  <image>
-	 <url>{{ site.url }}{{ site.imagedir }}over.jpg</url>
+	 <url>{{ site.url }}{{ site.imagedir }}cover.jpg</url>
 	 <title>{{ site.name }}</title>
 	 <link>{{ site.url }}</link>
  </image>
