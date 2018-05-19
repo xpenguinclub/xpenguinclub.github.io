@@ -5,12 +5,12 @@ layout: null
 <rss version="2.0">
 <channel>
  <title>{{ site.name }}</title>
- <link href="{{ site.url }}/"/>
+ <link>{{ site.url }}/</link>
  <author>hexdsl@protonmail.com</author>
  <image>
 	 <url>{{ site.url }}{{ site.imagedir }}cover.jpg</url>
 	 <title>{{ site.name }}</title>
-	 <link>{{ site.url }}</link>
+	 <link>{{ site.url }}/</link>
  </image>
  {% for post in site.posts %}
  <item>
