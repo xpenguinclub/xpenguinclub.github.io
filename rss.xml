@@ -7,6 +7,11 @@ layout: null
  <title>{{ site.name }}</title>
  <link href="{{ site.url }}/"/>
  <author>hexdsl@protonmail.com</author>
+ <image>
+	 <url>{{ site.url }}{{ site.imagedir }}over.jpg</url>
+	 <title>{{ site.name }}</title>
+	 <link>{{ site.url }}</link>
+ </image>
  {% for post in site.posts %}
  <item>
    <title>{{ post.title | xml_escape }}</title>
