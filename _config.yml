@@ -5,7 +5,7 @@ mp3url: http://xpenguin.pbmm.net/
 baseurl: ""
 imagedir: "/images/"
 twitter_username: HexDSL
-welcome: "A weekly Linux gaming podcast hosted by [HexDSL](https://www.youtube.com/channel/UCRE3NFNtdjR96-H4QG4U1Fgl) and [HamishTPB](https://www.youtube.com/channel/UCp1mWfjYbMcmNowBmvTUCag).
+welcome: "A weekly Linux gaming podcast hosted by [HexDSL](https://www.youtube.com/channel/UCRE3NFNtdjR96-H4QG4U1Fg) and [HamishTPB](https://www.youtube.com/channel/UCp1mWfjYbMcmNowBmvTUCag).
 \n\nYou can subscribe to the podcast [here](/rss.xml) and find HexDSL on Youtube [here](https://www.youtube.com/channel/UCRE3NFNtdjR96-H4QG4U1Fg).
 \n\nRecording of the podcast is streamed live on [Twitch](https://www.twitch.tv/hexdsl) every Saturday at 18:00 UK time."
 defaults:
