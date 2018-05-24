@@ -1,0 +1,56 @@
+==================================================================
+https://keybase.io/hexdsl
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://xpenguin.club
+  * I am hexdsl (https://keybase.io/hexdsl) on keybase.
+  * I have a public key ASCbwVQIT1mw_VYBh2Q9OKGjl60FP0pr2FvYNIsFwSZhUgo
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "0120247a60713a8c4519aa0b5c210f3506ab0bf6cd1904205451ef933d239b6586b80a",
+      "host": "keybase.io",
+      "kid": "01209bc154084f59b0fd560187643d38a1a397ad053f4a6bd85bd8348b05c12661520a",
+      "uid": "04fb6078d20bb9c3b4c8889472605419",
+      "username": "hexdsl"
+    },
+    "merkle_root": {
+      "ctime": 1527175220,
+      "hash": "556017b97986702ac2fc3638306b4e536a9e60c4c644ada4ca7e282e694ae7a60c0c0f06958b99e502a89a6d0a0f91d21e09a8e58d879d47de1f668719554601",
+      "hash_meta": "ad5654ca13aed2116ffb193c85b944b808efa2acb3d67fa135110ba081c80710",
+      "seqno": 2896180
+    },
+    "service": {
+      "entropy": "BW0Zv8jZlkn5Jz2/gdIuo4fP",
+      "hostname": "xpenguin.club",
+      "protocol": "https:"
+    },
+    "type": "web_service_binding",
+    "version": 2
+  },
+  "client": {
+    "name": "keybase.io go client",
+    "version": "1.0.49"
+  },
+  "ctime": 1527175228,
+  "expire_in": 504576000,
+  "prev": "4a507a73b81c07724d9bd196223a543b384f0bf072c3adf6157de8672deef19b",
+  "seqno": 18,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+hKRib2R5hqhkZXRhY2hlZMOpaGFzaF90eXBlCqNrZXnEIwEgm8FUCE9ZsP1WAYdkPTiho5etBT9Ka9hb2DSLBcEmYVIKp3BheWxvYWTESpcCEsQgSlB6c7gcB3JNm9GWIjpUOzhPC/Byw632FX3oZy3u8ZvEILmsA+BoDsmCbxvzZODRtZhy/GcDeILWIzskCgP/0669AgHCo3NpZ8RAfwRrFDjS5KYp2/DIsAEmCgCimpRpmTPPdEz/NJn5GhEN0OQibaF8MFXlKTWk1q+VkVkfci972wWM3Ka+pNezAqhzaWdfdHlwZSCkaGFzaIKkdHlwZQildmFsdWXEIILjnHS5lDjzqBws5WPmeRZOmA40s53lcwXehS9CMF5So3RhZ80CAqd2ZXJzaW9uAQ==
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/hexdsl
+
+==================================================================
