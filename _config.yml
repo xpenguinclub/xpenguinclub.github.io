@@ -36,6 +36,9 @@ links:
     Youtube:
         url: https://www.youtube.com/channel/UCRE3NFNtdjR96-H4QG4U1Fg
         image: youtube_icon.png
+    Mastodon:
+        url: https://linuxrocks.online/@HexDSL
+        image: mastodon_icon.png
     Twitter:
         url: https://twitter.com/HexDSL
         image: twitter_icon.png
