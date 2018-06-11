@@ -58,4 +58,4 @@ This week HexDSL is joined by ArchToasty (Hamish went to play MTG!) to talk abou
 * [Email](mailto:hexdsl@protonmail.com)
 
 ## On Youtube
-{% include yt.html vidid="PZmvB6dZueM" %}
+{% include yt.html vidid="T8Tuf3KRCgI" %}
