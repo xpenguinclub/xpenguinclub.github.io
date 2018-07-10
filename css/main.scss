@@ -133,6 +133,10 @@ h3 {
 	font-size: 0.9em;
 }
 .excerpt, #postcontent, article {
+	p, ul {
+		font-size: 1.2em;
+		line-height: 1.7em;
+	}
 	ul {
 		list-style: none;
 	}
@@ -140,7 +144,7 @@ h3 {
 		content: "▸ ";
 		color: $highlight-col;
 	}
-	ul ul {
+	ul ul, ul blockquote {
 		font-size: 1em;
 	}
 }
