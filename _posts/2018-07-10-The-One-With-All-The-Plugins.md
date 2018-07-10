@@ -59,4 +59,4 @@ This week we talk Cat Games, Food Trucks and Steam Sales. In our discussion topi
 * [Email](mailto:hexdsl@protonmail.com)
 
 ## On Youtube
-{% include yt.html vidid="JGuO7qpDso8" %}1
+{% include yt.html vidid="JGuO7qpDso8" %}
