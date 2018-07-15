@@ -1,7 +1,7 @@
 name: .Xpenguin
 description: A weekly Linux gaming podcast
 url: http://xpenguin.club
-mp3url: http://206.189.5.169/podcasts/
+mp3url: http://podcasts.xpenguin.club/podcasts/
 baseurl: ""
 imagedir: "/images/"
 twitter_username: HexDSL
